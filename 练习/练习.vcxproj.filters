@@ -24,6 +24,9 @@
     <ClCompile Include="语文成绩.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="海底高铁.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
     <ClCompile Include="地毯.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
