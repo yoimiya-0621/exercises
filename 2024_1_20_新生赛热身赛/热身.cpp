@@ -1,55 +1,52 @@
-#define  _CRT_SECURE_NO_WARNINGS
-#include <stdio.h>
+#define _CRT_SECURE_NO_WARNINGS
+#include <cstdio>
+#include <algorithm>
+using namespace std;
 int main()
 {
-    int t, n;
-    char s[100];
-    scanf("%d", &t);
-    for (int i = 0; i < t; i++)
+    int n, k, q, s = 0;
+    scanf("%d %d", &n, &k);
+    int a[1000] = { 0 };
+    for (int i = 0; i < n; i++)
     {
-        scanf("%d", &n);
-        getchar();
-        gets_s(s);
-        for (int j = 0; j < n; j++)
+        scanf("%d", &a[i]);
+    }
+    scanf("%d", &q);
+    for (int i = 0; i < q; i++)
+    {
+        int x = 0;
+        scanf("%d", x);
+        if (k == 1)
         {
-            char p[100];
-            gets_s(p);
-            int pl = 0, sl = 0, sy = 0;
-            while (1)
+            for (int j = 0; j < n; j++)
             {
-                if (p[pl] == s[sl])
+                if (a[j] == x)
                 {
-                    if (pl == 0)
-                        sy = sl;
-                    pl++;
-                    sl++;
-                }
-
-                else
-                {
-                    if (pl == 0)
-                    {
-                        sl++;
-                        sy++;
-                    }
-                    else {
-                        pl = 0;
-                        sy++;
-                        sl = sy;
-                    }
-                }
-                if (p[pl] == '\0')
-                {
-                    printf("duile\n");
-                    break;
-                }
-                if (s[sy] == '\0')
-                {
-                    printf("cuole\n");
+                    printf("Yes\n");
+                    s = 1;
                     break;
                 }
             }
         }
+        if (k == 2)
+        {
+            for (int j = 0; j < n - 1; j++)
+            {
+                for (int r = j + 1; r < n; r++)
+                {
+                    if (a[j] + a[r] == x)
+                    {
+                        printf("Yes\n");
+                        s = 1;
+                        break;
+                    }
+                }
+                if (s == 1)
+                    break;
+            }
+        }
+        if (s == 1)
+            printf("No\n");
     }
     return 0;
 }
