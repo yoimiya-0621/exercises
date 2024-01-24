@@ -39,41 +39,41 @@
 //	return 0;
 //}
 //第二版
-//#include <cstdio>
-//#include <algorithm>
-//using namespace std;
-//int read()//快读
-//{
-//	char c=getchar();
-//	int x = 0, f = 1;
-//	while (c < '0' || c>'9')
-//	{
-//		if (c == '-')
-//			f = -1;
-//		c=getchar();
-//	}
-//	while (c > '0' && c<'9')
-//	{
-//		x = x * 10 + c - '0';
-//		c=getchar();
-//	}
-//	return x * f;
-//}
-//int main()
-//{
-//	int n, m;
-//	n = read();
-//	m = read();
-//	int a[10001] = { 0 };
-//	for (int i = 0; i < n; i++)
-//		a[i] = read();
-//	for (int i = 0; i < m; i++)
-//	{
-//		int x = read();
-//		int ans = lower_bound(a, a + n,x)-a+1;
-//		if (x == a[ans-1]) printf("%d ", ans);
-//		else
-//			printf("-1 ");
-//	}
-//	return 0;
-//}
+#include <cstdio>
+#include <algorithm>
+using namespace std;
+int read()//快读
+{
+	char c=getchar();
+	int x = 0, f = 1;
+	while (c < '0' || c>'9')
+	{
+		if (c == '-')
+			f = -1;
+		c=getchar();
+	}
+	while (c > '0' && c<'9')
+	{
+		x = x * 10 + c - '0';
+		c=getchar();
+	}
+	return x * f;
+}
+int main()
+{
+	int n, m;
+	n = read();
+	m = read();
+	int a[10001] = { 0 };
+	for (int i = 0; i < n; i++)
+		a[i] = read();
+	for (int i = 0; i < m; i++)
+	{
+		int x = read();
+		int ans = lower_bound(a, a + n,x)-a+1;
+		if (x == a[ans-1]) printf("%d ", ans);
+		else
+			printf("-1 ");
+	}
+	return 0;
+}
