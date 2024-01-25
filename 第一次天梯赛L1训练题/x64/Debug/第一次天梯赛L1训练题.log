@@ -1,1 +1,4 @@
-﻿LINK : fatal error LNK1168: 无法打开 D:\code\personal-algorithm-training\第一次天梯赛L1训练题\x64\Debug\第一次天梯赛L1训练题.exe 进行写入
+﻿  连续因子.cpp
+D:\code\personal-algorithm-training\第一次天梯赛L1训练题\连续因子.cpp(8,27): warning C4244: “参数”: 从“__int64”转换到“double”，可能丢失数据
+D:\code\personal-algorithm-training\第一次天梯赛L1训练题\连续因子.cpp(25,34): warning C4244: “参数”: 从“__int64”转换到“double”，可能丢失数据
+  第一次天梯赛L1训练题.vcxproj -> D:\code\personal-algorithm-training\第一次天梯赛L1训练题\x64\Debug\第一次天梯赛L1训练题.exe

@@ -129,15 +129,18 @@
   <ItemGroup>
     <ClCompile Include="A-B.cpp" />
     <ClCompile Include="N个数求和.cpp" />
+    <ClCompile Include="个位数统计.c" />
     <ClCompile Include="到底有多二.cpp" />
     <ClCompile Include="大笨钟.cpp" />
     <ClCompile Include="帅到没朋友.cpp" />
     <ClCompile Include="念数字.cpp" />
     <ClCompile Include="打印沙漏.cpp" />
+    <ClCompile Include="查验身份证.cpp" />
     <ClCompile Include="求整数段和.cpp" />
     <ClCompile Include="考试座位号.cpp" />
     <ClCompile Include="谁先倒.cpp" />
     <ClCompile Include="跟奥巴马一起画方块.cpp" />
+    <ClCompile Include="连续因子.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

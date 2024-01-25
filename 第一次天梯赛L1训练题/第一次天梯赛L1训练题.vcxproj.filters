@@ -48,5 +48,14 @@
     <ClCompile Include="念数字.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="查验身份证.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="个位数统计.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="连续因子.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
