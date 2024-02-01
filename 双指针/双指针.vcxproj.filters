@@ -27,5 +27,8 @@
     <ClCompile Include="Cow Lineup S.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="数对.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

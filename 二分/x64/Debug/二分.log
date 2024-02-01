@@ -1,5 +1,4 @@
-﻿  数列分段.cpp
-  查找.cpp
-D:\code\personal-algorithm-training\二分\查找.cpp(73,11): warning C4244: “初始化”: 从“__int64”转换到“int”，可能丢失数据
-  正在生成代码...
+﻿  烦恼的高考志愿.cpp
+D:\code\personal-algorithm-training\二分\烦恼的高考志愿.cpp(35,12): warning C4244: “=”: 从“double”转换到“int”，可能丢失数据
+D:\code\personal-algorithm-training\二分\烦恼的高考志愿.cpp(37,12): warning C4244: “=”: 从“double”转换到“int”，可能丢失数据
   二分.vcxproj -> D:\code\personal-algorithm-training\二分\x64\Debug\二分.exe
