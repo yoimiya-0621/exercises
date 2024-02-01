@@ -27,5 +27,14 @@
     <ClCompile Include="八皇后.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="排队接水.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="铺设道路.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="三值的排序.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

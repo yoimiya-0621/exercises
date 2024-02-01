@@ -127,10 +127,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="三值的排序.cpp" />
     <ClCompile Include="八皇后.cpp" />
     <ClCompile Include="奖学金.cpp" />
+    <ClCompile Include="排队接水.cpp" />
     <ClCompile Include="纪念品分组.cpp" />
     <ClCompile Include="选举学生会.cpp" />
+    <ClCompile Include="铺设道路.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
