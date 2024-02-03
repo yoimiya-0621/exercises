@@ -21,5 +21,17 @@
     <ClCompile Include="线性筛素数.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="找筷子.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="高低位变换.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="约数研究.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="车的攻击.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

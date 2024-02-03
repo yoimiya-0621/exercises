@@ -127,8 +127,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="找筷子.cpp" />
+    <ClCompile Include="约数研究.cpp" />
     <ClCompile Include="线性筛素数.cpp" />
+    <ClCompile Include="车的攻击.cpp" />
     <ClCompile Include="进制转换.cpp" />
+    <ClCompile Include="高低位变换.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
