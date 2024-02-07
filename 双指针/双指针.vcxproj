@@ -130,6 +130,7 @@
     <ClCompile Include="Cow Lineup S.cpp" />
     <ClCompile Include="数对.cpp" />
     <ClCompile Include="狠狠的切割.cpp" />
+    <ClCompile Include="砍树.cpp" />
     <ClCompile Include="连续自然数和.cpp" />
     <ClCompile Include="逛画展.cpp" />
   </ItemGroup>
