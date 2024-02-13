@@ -1,3 +1,5 @@
 ﻿  表达式转换.c
-D:\code\personal-algorithm-training\栈和队列\栈和队列\表达式转换.c(54,2): warning C4013: “gets”未定义；假设外部返回 int
+D:\code\personal-algorithm-training\栈和队列\栈和队列\表达式转换.c(145,2): warning C4013: “gets”未定义；假设外部返回 int
+D:\code\personal-algorithm-training\栈和队列\栈和队列\表达式转换.c(151,7): warning C4013: “isdigit”未定义；假设外部返回 int
+D:\code\personal-algorithm-training\栈和队列\栈和队列\表达式转换.c(146,12): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
   栈和队列.vcxproj -> D:\code\personal-algorithm-training\栈和队列\x64\Debug\栈和队列.exe

@@ -18,5 +18,8 @@
     <ClCompile Include="表达式转换.c">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="求前缀表达式的值.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
