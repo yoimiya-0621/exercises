@@ -129,6 +129,7 @@
   <ItemGroup>
     <ClCompile Include="大乘积.cpp" />
     <ClCompile Include="字母数.cpp" />
+    <ClCompile Include="接龙数列.cpp" />
     <ClCompile Include="星期几.cpp" />
     <ClCompile Include="清理水草.cpp" />
   </ItemGroup>

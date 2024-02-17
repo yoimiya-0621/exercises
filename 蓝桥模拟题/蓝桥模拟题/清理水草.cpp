@@ -67,21 +67,21 @@
 //    // 请在此输入您的代码
 //    return 0;
 //}
-#include <iostream>
-#include <algorithm>
-using namespace std;
-int main()
-{
-    long long n;
-    long long a[10000];
-    cin >> n;
-    for (long long i = 0; i < n; i++)
-        cin >> a[i];
-    for (long long i = 0; i + 2 < n; i++)
-    {
-        sort(a, a + i + 3);
-        cout << a[2] << " ";
-    }
-    // 请在此输入您的代码
-    return 0;
-}
+//#include <iostream>
+//#include <algorithm>
+//using namespace std;
+//int main()
+//{
+//    long long n;
+//    long long a[10000];
+//    cin >> n;
+//    for (long long i = 0; i < n; i++)
+//        cin >> a[i];
+//    for (long long i = 0; i + 2 < n; i++)
+//    {
+//        sort(a, a + i + 3);
+//        cout << a[2] << " ";
+//    }
+//    // 请在此输入您的代码
+//    return 0;
+//}

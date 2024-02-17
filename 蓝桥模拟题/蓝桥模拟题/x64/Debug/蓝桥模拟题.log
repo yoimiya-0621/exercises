@@ -1,2 +1,3 @@
-﻿  清理水草.cpp
+﻿  接龙数列.cpp
+D:\code\personal-algorithm-training\蓝桥模拟题\蓝桥模拟题\接龙数列.cpp(22,11): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
   蓝桥模拟题.vcxproj -> D:\code\personal-algorithm-training\蓝桥模拟题\x64\Debug\蓝桥模拟题.exe
