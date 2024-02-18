@@ -127,6 +127,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="counter表.cpp" />
     <ClCompile Include="三连击.cpp" />
     <ClCompile Include="大乘积.cpp" />
     <ClCompile Include="字母数.cpp" />
