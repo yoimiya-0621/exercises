@@ -136,6 +136,7 @@
     <ClCompile Include="清理水草.cpp" />
     <ClCompile Include="灌水.cpp" />
     <ClCompile Include="计算器改良.c" />
+    <ClCompile Include="车站.cpp" />
     <ClCompile Include="铺地毯.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
