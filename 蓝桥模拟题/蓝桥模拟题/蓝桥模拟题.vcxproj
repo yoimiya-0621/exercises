@@ -127,11 +127,16 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="三连击.cpp" />
     <ClCompile Include="大乘积.cpp" />
     <ClCompile Include="字母数.cpp" />
+    <ClCompile Include="导弹拦截.cpp" />
     <ClCompile Include="接龙数列.cpp" />
     <ClCompile Include="星期几.cpp" />
     <ClCompile Include="清理水草.cpp" />
+    <ClCompile Include="灌水.cpp" />
+    <ClCompile Include="计算器改良.c" />
+    <ClCompile Include="铺地毯.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
