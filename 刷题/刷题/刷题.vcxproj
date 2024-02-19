@@ -128,9 +128,11 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="ISBN码.cpp" />
+    <ClCompile Include="均分纸牌.cpp" />
     <ClCompile Include="幂次方.cpp" />
     <ClCompile Include="最大公约数与最小公倍数.cpp" />
     <ClCompile Include="谁拿了最多的奖学金.cpp" />
+    <ClCompile Include="过河卒.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

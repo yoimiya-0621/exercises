@@ -27,5 +27,11 @@
     <ClCompile Include="最大公约数与最小公倍数.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="均分纸牌.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="过河卒.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
