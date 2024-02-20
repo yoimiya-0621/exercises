@@ -33,5 +33,17 @@
     <ClCompile Include="过河卒.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="数的计算.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="字符串的展开.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="学生分组.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="台阶问题.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
