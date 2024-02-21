@@ -36,5 +36,14 @@
     <ClCompile Include="三值的排序.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="宇宙总统.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="攀爬者.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="欢乐的跳.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

@@ -45,5 +45,11 @@
     <ClCompile Include="台阶问题.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="乒乓球.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="两只牛.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
