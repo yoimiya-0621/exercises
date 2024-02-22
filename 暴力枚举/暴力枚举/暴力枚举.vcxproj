@@ -127,9 +127,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="first_step.cpp" />
+    <ClCompile Include="perket.cpp" />
     <ClCompile Include="三连击（升级版）.cpp" />
+    <ClCompile Include="回文质数.cpp" />
+    <ClCompile Include="涂国旗.cpp" />
     <ClCompile Include="烤鸡.cpp" />
     <ClCompile Include="统计方形.cpp" />
+    <ClCompile Include="考前抱佛脚.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

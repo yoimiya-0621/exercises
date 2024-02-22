@@ -24,5 +24,20 @@
     <ClCompile Include="三连击（升级版）.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="回文质数.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="涂国旗.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="考前抱佛脚.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="first_step.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="perket.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
