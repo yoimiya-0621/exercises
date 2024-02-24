@@ -1,2 +1,4 @@
-﻿  车的攻击.cpp
+﻿  种田.cpp
+D:\code\personal-algorithm-training\基础数学问题\基础数学问题\种田.cpp(11,10): warning C4244: “初始化”: 从“__int64”转换到“int”，可能丢失数据
+D:\code\personal-algorithm-training\基础数学问题\基础数学问题\种田.cpp(24,10): warning C4244: “初始化”: 从“__int64”转换到“int”，可能丢失数据
   基础数学问题.vcxproj -> D:\code\personal-algorithm-training\基础数学问题\x64\Debug\基础数学问题.exe

@@ -33,5 +33,8 @@
     <ClCompile Include="车的攻击.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="种田.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

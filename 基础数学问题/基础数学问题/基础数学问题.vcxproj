@@ -128,6 +128,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="找筷子.cpp" />
+    <ClCompile Include="种田.cpp" />
     <ClCompile Include="约数研究.cpp" />
     <ClCompile Include="线性筛素数.cpp" />
     <ClCompile Include="车的攻击.cpp" />
