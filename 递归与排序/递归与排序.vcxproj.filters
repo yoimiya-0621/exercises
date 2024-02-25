@@ -45,5 +45,17 @@
     <ClCompile Include="欢乐的跳.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="数楼梯.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="栈.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="function.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="最大字段和.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

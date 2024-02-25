@@ -127,12 +127,16 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="function.cpp" />
     <ClCompile Include="三值的排序.cpp" />
     <ClCompile Include="八皇后.cpp" />
     <ClCompile Include="奖学金.cpp" />
     <ClCompile Include="宇宙总统.cpp" />
     <ClCompile Include="排队接水.cpp" />
     <ClCompile Include="攀爬者.cpp" />
+    <ClCompile Include="数楼梯.cpp" />
+    <ClCompile Include="最大字段和.cpp" />
+    <ClCompile Include="栈.cpp" />
     <ClCompile Include="欢乐的跳.cpp" />
     <ClCompile Include="纪念品分组.cpp" />
     <ClCompile Include="选举学生会.cpp" />
