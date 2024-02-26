@@ -130,6 +130,7 @@
     <ClCompile Include="ISBN码.cpp" />
     <ClCompile Include="两只牛.cpp" />
     <ClCompile Include="乒乓球.cpp" />
+    <ClCompile Include="借教室.cpp" />
     <ClCompile Include="台阶问题.cpp" />
     <ClCompile Include="均分纸牌.cpp" />
     <ClCompile Include="字符串的展开.cpp" />

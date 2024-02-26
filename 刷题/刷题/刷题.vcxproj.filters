@@ -51,5 +51,8 @@
     <ClCompile Include="两只牛.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="借教室.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
