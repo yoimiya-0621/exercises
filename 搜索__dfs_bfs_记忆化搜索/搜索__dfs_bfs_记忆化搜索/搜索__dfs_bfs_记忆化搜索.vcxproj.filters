@@ -21,5 +21,8 @@
     <ClCompile Include="马的遍历.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="单词方阵.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

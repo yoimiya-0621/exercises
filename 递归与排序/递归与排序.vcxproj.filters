@@ -57,5 +57,17 @@
     <ClCompile Include="最大字段和.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="蜜蜂路线.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="小A点菜.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="选数.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="secret-COW.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
