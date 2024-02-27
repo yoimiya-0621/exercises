@@ -1,2 +1,4 @@
-﻿  阶乘之和.cpp
+﻿  A乘B_高精度.cpp
+D:\code\personal-algorithm-training\模拟与高精度\模拟与高精度\A乘B_高精度.cpp(14,11): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+D:\code\personal-algorithm-training\模拟与高精度\模拟与高精度\A乘B_高精度.cpp(15,11): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
   模拟与高精度.vcxproj -> D:\code\personal-algorithm-training\模拟与高精度\x64\Debug\模拟与高精度.exe

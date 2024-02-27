@@ -138,6 +138,8 @@
     <ClCompile Include="幂次方.cpp" />
     <ClCompile Include="数的计算.cpp" />
     <ClCompile Include="最大公约数与最小公倍数.cpp" />
+    <ClCompile Include="疯狂的采药.cpp" />
+    <ClCompile Include="装箱问题.cpp" />
     <ClCompile Include="谁拿了最多的奖学金.cpp" />
     <ClCompile Include="过河卒.cpp" />
   </ItemGroup>

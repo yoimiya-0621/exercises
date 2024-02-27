@@ -127,6 +127,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="A乘B_高精度.cpp" />
     <ClCompile Include="阶乘之和.cpp" />
     <ClCompile Include="阶乘数码.cpp" />
   </ItemGroup>

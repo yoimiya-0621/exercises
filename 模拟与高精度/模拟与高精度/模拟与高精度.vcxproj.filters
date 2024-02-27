@@ -21,5 +21,8 @@
     <ClCompile Include="阶乘之和.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="A乘B_高精度.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
