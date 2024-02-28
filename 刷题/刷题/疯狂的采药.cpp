@@ -60,3 +60,62 @@
 //	printf("%lld", dp[t]);
 //	return 0;
 //}
+//#include <iostream>
+//#include <algorithm>
+//using namespace std;
+//struct S
+//{
+//	int a;
+//	int b;
+//	double c;
+//}s[1000];
+//bool cmp(S a, S b)
+//{
+//	return a.c > b.c;
+//}
+//int main()
+//{
+//	int t, m;
+//	cin >> t >> m;
+//	for (int i = 0; i < m; i++)
+//	{
+//		cin >> s[i].a >> s[i].b;
+//		s[i].c = (double)s[i].b / s[i].a;
+//	}
+//	sort(s, s + m, cmp);
+//	int i = 0;
+//	long long ans = 0;
+//	while (i<m)
+//	{
+//		if (t >= s[i].a) {
+//			t -= s[i].a;
+//			ans += s[i].b;
+//		}
+//		i++;
+//	}
+//	cout << ans;
+//	return 0;
+//}
+//#include <iostream>
+//#include <algorithm>
+//using namespace std;
+//int main()
+//{
+//	int t, m;
+//	cin >> t >> m;
+//	int a[10000][2] = { 0 };
+//	for (int i = 0; i < m; i++)
+//	{
+//		cin >> a[i][0] >> a[i][1];
+//	}
+//	int dp[10000] = { 0 };
+//	for (int i = 0; i < m; i++)
+//	{
+//		for (int j = t; j>=a[i][0]; j--)
+//		{
+//			dp[j] = max(dp[j], dp[j - a[i][0]] + a[i][1]);
+//		}
+//	}
+//	cout << dp[t];
+//	return 0;
+//}

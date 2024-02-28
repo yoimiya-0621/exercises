@@ -60,5 +60,11 @@
     <ClCompile Include="装箱问题.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="数字三角形.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="五倍经验日.cpp">
+      <Filter>头文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
