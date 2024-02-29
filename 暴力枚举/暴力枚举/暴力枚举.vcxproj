@@ -104,6 +104,8 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -118,6 +120,8 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -131,6 +135,7 @@
     <ClCompile Include="perket.cpp" />
     <ClCompile Include="三连击（升级版）.cpp" />
     <ClCompile Include="回文质数.cpp" />
+    <ClCompile Include="摆花.cpp" />
     <ClCompile Include="涂国旗.cpp" />
     <ClCompile Include="烤鸡.cpp" />
     <ClCompile Include="统计方形.cpp" />

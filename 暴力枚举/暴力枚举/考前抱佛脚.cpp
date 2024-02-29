@@ -44,3 +44,34 @@
 //	cout << ans;
 //	return 0;
 //}
+//#include <iostream>
+//#include <cmath>
+//#include <algorithm>
+//using namespace std;
+//int ans = 0;
+//int main()
+//{
+//	int s[4] = { 0 };
+//	cin >> s[0] >> s[1] >> s[2] >> s[3];
+//	for (int i = 0; i < 4; i++)
+//	{
+//		int sum=0,a[25] = { 0 };
+//		int dp[25] = { 0 };
+//		for (int j = 0; j < s[i]; j++)
+//		{
+//			cin >> a[j];
+//			sum += a[j];
+//		}
+//		int c = sum / 2;
+//		for (int j = 0; j < s[i]; j++)
+//		{
+//			for (int k = c; k >=a[j]; k--)
+//			{
+//				dp[k] = max(dp[k], dp[k - a[j]] + a[j]);
+//			}
+//		}
+//		ans += sum-dp[c];
+//	}
+//	cout << ans;
+//	return 0;
+//}
