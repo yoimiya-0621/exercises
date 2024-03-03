@@ -1,4 +1,2 @@
-﻿  1.c
-D:\code\personal-algorithm-training\训练1\训练1\1.c(50,3): warning C4013: “gets”未定义；假设外部返回 int
-D:\code\personal-algorithm-training\训练1\训练1\1.c(51,13): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+﻿  2.cpp
   训练1.vcxproj -> D:\code\personal-algorithm-training\训练1\x64\Debug\训练1.exe
