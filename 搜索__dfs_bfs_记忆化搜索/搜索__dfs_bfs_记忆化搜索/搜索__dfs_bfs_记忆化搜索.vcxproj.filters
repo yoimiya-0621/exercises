@@ -33,5 +33,8 @@
     <ClCompile Include="lake_count.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="填涂颜色.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
