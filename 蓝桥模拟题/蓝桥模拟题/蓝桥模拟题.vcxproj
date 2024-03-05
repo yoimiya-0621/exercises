@@ -127,6 +127,9 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="14B_1_日期统计.cpp" />
+    <ClCompile Include="14B_2_01串的熵.cpp" />
+    <ClCompile Include="14B_3_冶炼金属.cpp" />
     <ClCompile Include="counter表.cpp" />
     <ClCompile Include="三连击.cpp" />
     <ClCompile Include="大乘积.cpp" />

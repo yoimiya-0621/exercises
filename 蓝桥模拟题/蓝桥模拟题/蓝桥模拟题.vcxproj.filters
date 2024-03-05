@@ -51,5 +51,14 @@
     <ClCompile Include="counter表.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="14B_1_日期统计.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="14B_2_01串的熵.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="14B_3_冶炼金属.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
