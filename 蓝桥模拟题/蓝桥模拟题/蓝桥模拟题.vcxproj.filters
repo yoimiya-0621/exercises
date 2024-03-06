@@ -27,7 +27,7 @@
     <ClCompile Include="清理水草.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="接龙数列.cpp">
+    <ClCompile Include="14B_5_接龙数列.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="灌水.cpp">
@@ -58,6 +58,9 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="14B_3_冶炼金属.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="14B_4_飞机降落.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

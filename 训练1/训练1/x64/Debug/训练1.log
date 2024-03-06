@@ -1,2 +1,3 @@
 ﻿  2.cpp
+D:\code\personal-algorithm-training\训练1\训练1\2.cpp(454,12): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
   训练1.vcxproj -> D:\code\personal-algorithm-training\训练1\x64\Debug\训练1.exe

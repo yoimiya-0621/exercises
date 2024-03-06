@@ -332,45 +332,142 @@
 //    return 0;
 //}
 
+//#include <iostream>
+//#include <vector>
+//#include <string>
+//using namespace std;
+//
+//void splitIpAddresses(string s, int start, vector<string>& path, vector<string>& res) {
+//    if (start == 4) {
+//        if (s.empty()) {
+//            string ip = path[0] + '.' + path[1] + '.' + path[2] + '.' + path[3];
+//            res.push_back(ip);
+//        }
+//        return;
+//    }
+//    for (int i = 1; i <= 3; i++) {
+//        if (s.length() < i) break;
+//        int val = atoi(s.substr(0, i).c_str());
+//        if (val > 255 || i != to_string(val).size()) continue;
+//        path[start] = s.substr(0, i);
+//        splitIpAddresses(s.substr(i), start + 1, path, res);
+//    }
+//}
+//
+//vector<string> restoreIpAddresses(string s) {
+//    vector<string> res;
+//    vector<string> path(4);
+//    splitIpAddresses(s, 0, path, res);
+//    return res;
+//}
+//
+//int main() {
+//    string input;
+//    cin >> input;
+//    vector<string> output = restoreIpAddresses(input);
+//    cout << "{";
+//    if (output.size() != 0)
+//        cout << output[0];
+//    for (int i = 1; i < output.size(); i++) {
+//        cout << "," << output[i];
+//    }
+//    cout << "}";
+//    return 0;
+//}
+
+//#include <iostream>
+//#include <map>
+//using namespace std;
+//int a[15] = { 0 },ma=0,mm=0;
+//map<int, int>c;
+//int main()
+//{
+//	int n;
+//	cin >> n;
+//	for (int i = 0; i < n; i++)
+//	{
+//		int m;
+//		cin >> m;
+//		memset(a, 0, sizeof(a));
+//		for (int j = 0; j < m; j++)
+//		{
+//			cin >> a[j];
+//			c[a[j]] += 1;
+//			if (ma < c[a[j]]||ma==c[a[j]]&&a[j]>mm)
+//			{
+//				mm = a[j];
+//				ma = c[a[j]];
+//			}
+//		}
+//	}
+//	cout << mm << " " << ma;
+//	return 0;
+//}
+
+//#include <iostream>
+//#include <vector>
+//using namespace std;
+//vector<string>a;
+//int main()
+//{
+//	string s;
+//	cin >> s;
+//	while (s != ".")
+//	{
+//		a.push_back(s);
+//		cin >> s;
+//	}
+//	int i = 0,flag=0;
+//	for(int i=0;i<a.size();i++)
+//	{
+//		if (i == 1||i==13)
+//			flag++;
+//	}
+//	if (flag == 0)
+//	{
+//		printf("Momo... No one is for you ...");
+//	}
+//	else if (flag == 1)
+//	{
+//		cout << a[1];
+//		printf(" is the only one for you...");
+//	}
+//	else if (flag == 2)
+//	{
+//		cout << a[1];
+//		printf(" and ");
+//		cout << a[13];
+//		printf(" are inviting you to dinner...", a[1], a[13]);
+//	}
+//	return 0;
+//}
 #include <iostream>
-#include <vector>
 #include <string>
 using namespace std;
-
-void splitIpAddresses(string s, int start, vector<string>& path, vector<string>& res) {
-    if (start == 4) {
-        if (s.empty()) {
-            string ip = path[0] + '.' + path[1] + '.' + path[2] + '.' + path[3];
-            res.push_back(ip);
-        }
-        return;
-    }
-    for (int i = 1; i <= 3; i++) {
-        if (s.length() < i) break;
-        int val = atoi(s.substr(0, i).c_str());
-        if (val > 255 || i != to_string(val).size()) continue;
-        path[start] = s.substr(0, i);
-        splitIpAddresses(s.substr(i), start + 1, path, res);
-    }
-}
-
-vector<string> restoreIpAddresses(string s) {
-    vector<string> res;
-    vector<string> path(4);
-    splitIpAddresses(s, 0, path, res);
-    return res;
-}
-
-int main() {
-    string input;
-    cin >> input;
-    vector<string> output = restoreIpAddresses(input);
-    cout << "{";
-    if (output.size() != 0)
-        cout << output[0];
-    for (int i = 1; i < output.size(); i++) {
-        cout << "," << output[i];
-    }
-    cout << "}";
-    return 0;
+int main()
+{
+	int n;
+	cin >> n;
+	string s;
+	char c = getchar();
+	getline(cin, s);
+	for (int i=(s.size()/n)*n, k = 0; k<n; i++, k++)
+	{
+		for (int j = i; j >= 0; j -= n)
+		{
+			if (j > s.size())
+			{
+				cout << " ";
+				continue;
+			}
+			if (s[j] == '\0')
+			{
+				cout << " ";
+				continue;
+			}
+			cout << s[j];
+		}
+		cout << "\n";
+	}
+	return 0;
 }
