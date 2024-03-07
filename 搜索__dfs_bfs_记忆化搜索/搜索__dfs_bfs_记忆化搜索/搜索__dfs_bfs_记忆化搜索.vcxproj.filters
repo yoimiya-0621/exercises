@@ -39,5 +39,8 @@
     <ClCompile Include="奇怪的搜索.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="meteor_shower_s.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

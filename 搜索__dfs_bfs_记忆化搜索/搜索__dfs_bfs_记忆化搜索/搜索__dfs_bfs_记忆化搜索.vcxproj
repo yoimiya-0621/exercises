@@ -132,6 +132,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="lake_count.cpp" />
+    <ClCompile Include="meteor_shower_s.cpp" />
     <ClCompile Include="perket.cpp" />
     <ClCompile Include="八皇后.cpp" />
     <ClCompile Include="单词方阵.cpp" />

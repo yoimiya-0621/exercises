@@ -29,29 +29,29 @@
 //	printf("%d", n - ans);
 //	return 0;
 //}
-#include <iostream>
-#include <vector>
-#include <algorithm>
-using namespace std;
-int n;
-int dp[10] = { 0 };
-vector<string>a;
-int main()
-{
-	cin >> n;
-	string s;
-	for (int i = 0; i < n; i++)
-	{
-		cin >> s;
-		a.push_back(s);
-	}
-	for (int i = 0; i < a.size(); i++)
-	{
-		dp[(a[i][a[i].size()-1]) - '0'] = max(dp[(a[i][a[i].size()-1]) - '0'], dp[a[i][0] - '0'] + 1);
-	}
-	int m = 0;
-	for (int i = 0; i < 10; i++)
-		m = max(m, dp[i]);
-	cout << n - m;
-	return 0;
-}
+//#include <iostream>
+//#include <vector>
+//#include <algorithm>
+//using namespace std;
+//int n;
+//int dp[10] = { 0 };
+//vector<string>a;
+//int main()
+//{
+//	cin >> n;
+//	string s;
+//	for (int i = 0; i < n; i++)
+//	{
+//		cin >> s;
+//		a.push_back(s);
+//	}
+//	for (int i = 0; i < a.size(); i++)
+//	{
+//		dp[(a[i][a[i].size()-1]) - '0'] = max(dp[(a[i][a[i].size()-1]) - '0'], dp[a[i][0] - '0'] + 1);
+//	}
+//	int m = 0;
+//	for (int i = 0; i < 10; i++)
+//		m = max(m, dp[i]);
+//	cout << n - m;
+//	return 0;
+//}
