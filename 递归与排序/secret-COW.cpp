@@ -32,18 +32,18 @@
 //	}
 //	return 0;
 //}
-#include<iostream>
-using namespace std;
-
-void fun(int* a, int* b) {
-    int x = *a;
-    *a = *b;
-    *b = x;
-    cout << *a << *b << " ";
-}
-int main() {
-    int x = 1, y = 2;
-    fun(&x, &y);
-    cout << x << y << endl;
-    return 0;
-}
+//#include<iostream>
+//using namespace std;
+//
+//void fun(int* a, int* b) {
+//    int x = *a;
+//    *a = *b;
+//    *b = x;
+//    cout << *a << *b << " ";
+//}
+//int main() {
+//    int x = 1, y = 2;
+//    fun(&x, &y);
+//    cout << x << y << endl;
+//    return 0;
+//}

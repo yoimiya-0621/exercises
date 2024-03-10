@@ -138,6 +138,8 @@
     <ClCompile Include="单词方阵.cpp" />
     <ClCompile Include="填涂颜色.cpp" />
     <ClCompile Include="奇怪的搜索.cpp" />
+    <ClCompile Include="火星人.cpp" />
+    <ClCompile Include="花生采摘.cpp" />
     <ClCompile Include="迷宫.cpp" />
     <ClCompile Include="马的遍历.cpp" />
   </ItemGroup>

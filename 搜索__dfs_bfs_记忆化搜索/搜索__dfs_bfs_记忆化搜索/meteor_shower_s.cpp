@@ -48,27 +48,27 @@
 //	cout << sum;
 //	return 0;
 //}
-#include <iostream>
-using namespace std;
-struct S {
-	char c;
-	float h;
-}a[12];
-int main()
-{
-	int n;
-	cin >> n;
-	char c = getchar();
-	for (int i = 0; i < n; i++)
-	{
-		scanf("%c %f", &a[i].c, &a[i].h);
-		if (a[i].c == 'M')
-		{
-			printf("%.2f\n", a[i].h / 1.09);
-		}
-		else
-			printf("%.2f\n", a[i].h * 1.09);
-		c = getchar();
-	}
-	return 0;
-}
+//#include <iostream>
+//using namespace std;
+//struct S {
+//	char c;
+//	float h;
+//}a[12];
+//int main()
+//{
+//	int n;
+//	cin >> n;
+//	char c = getchar();
+//	for (int i = 0; i < n; i++)
+//	{
+//		scanf("%c %f", &a[i].c, &a[i].h);
+//		if (a[i].c == 'M')
+//		{
+//			printf("%.2f\n", a[i].h / 1.09);
+//		}
+//		else
+//			printf("%.2f\n", a[i].h * 1.09);
+//		c = getchar();
+//	}
+//	return 0;
+//}

@@ -42,5 +42,11 @@
     <ClCompile Include="meteor_shower_s.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="花生采摘.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="火星人.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
