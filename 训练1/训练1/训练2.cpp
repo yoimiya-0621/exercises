@@ -181,6 +181,7 @@ int main()
 		cout << "no";
 	return 0;
 }*/
+/*
 #include <iostream>
 #include <cmath>
 #include <map>
@@ -281,6 +282,29 @@ int main()
 		{
 			cout << i << " " << c[i] << "\n";
 		}
+	}
+	return 0;
+}*/
+#include <bits/stdc++.h>
+using namespace std;
+int main()
+{
+	int l, n, w = 0;
+	cin >> l >> n;
+	n = pow(26, l) - n;
+	char a[100] = { 0 };
+	while (n > 0)
+	{
+		a[w] = 'a' + n % 26;
+		w++;
+		n /= 26;
+	}
+	for (int i = l - 1; i >= 0; i--)
+	{
+		if (a[i] == 0)
+			cout << "a";
+		else
+			cout << a[i];
 	}
 	return 0;
 }
