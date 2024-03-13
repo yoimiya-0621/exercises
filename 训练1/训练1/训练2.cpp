@@ -285,6 +285,7 @@ int main()
 	}
 	return 0;
 }*/
+/*
 #include <bits/stdc++.h>
 using namespace std;
 int main()
@@ -305,6 +306,122 @@ int main()
 			cout << "a";
 		else
 			cout << a[i];
+	}
+	return 0;
+}
+*/
+/*
+#include <iostream>
+#include <string>
+#include <vector>
+using namespace std;
+int main()
+{
+	char ch;
+	int n;
+	string s;
+	vector<string>a;
+	cin >> ch >> n;
+	char c = getchar();
+	for (int i = 0; i < n; i++)
+	{
+		getline(cin, s);
+		reverse(s.begin(), s.end());
+		a.push_back(s);
+	}
+	for (int i = n - 1; i >= 0; i--)
+	{
+		for (int j = 0; j < a[i].size(); j++)
+		{
+			if (a[i][j] != ' ')
+				cout << ch;
+			else
+				cout << " ";
+		}
+		cout << "\n";
+	}
+	return 0;
+}*/
+#include <bits/stdc++.h>
+using namespace std;
+int main()
+{
+	int n;
+	cin >> n;
+	char c = getchar();
+	for (int i = 0; i < n; i++) {
+		string s;
+		getline(cin, s);
+		cout << s << "\n";
+		cout << "AI: ";
+		int begin = 0, end = 0;
+		for (int k = 0; k < s.size(); k++)
+		{
+			int canyou = 0, couldyou = 0, j = k;
+			if (isalpha(s[j]))
+			{
+				begin = 1;
+				if ((s[j] == 'c' || s[j] == 'C') && (s[j + 1] == 'a' || s[j + 1] == 'A') &&
+					(s[j + 2] == 'n' || s[j + 2] == 'N'))
+				{
+					j = j + 3;
+					while (!isalpha(s[j]))
+						j++;
+					if ((s[j] == 'y' || s[j] == 'Y') && (s[j + 1] == 'o' || s[j + 1] == 'O')
+						&& (s[j + 2] == 'u' || s[j + 2] == 'U'))
+					{
+						canyou = j + 2;
+					}
+				}
+				if ((s[j] == 'c' || s[j] == 'C') && (s[j + 1] == 'o' || s[j + 1] == 'O') &&
+					(s[j + 2] == 'u' || s[j + 2] == 'U') && (s[j + 3] == 'l' || s[j + 3] == 'L') &&
+					s[j + 4] == 'd' || s[j + 4] == 'D')
+				{
+					j = j + 5;
+					while (!isalpha(s[j]))
+						j++;
+					if ((s[j] == 'y' || s[j] == 'Y') && (s[j + 1] == 'o' || s[j + 1] == 'O')
+						&& (s[j + 2] == 'u' || s[j + 2] == 'U'))
+					{
+						couldyou = j + 2;
+					}
+				}
+				if (canyou)
+				{
+					cout << "I can";
+					k = canyou;
+				}
+				else if (couldyou)
+				{
+					cout << "I could";
+					k = couldyou;
+				}
+				else if (s[j] == 'I' && !isalpha(s[j - 1]) && !isalpha(s[j + 1]))
+				{
+					cout << "you";
+				}
+				else if (s[j] == 'm' && s[j + 1] == 'e' && !isalpha(s[j + 2]) && !isalpha(s[j - 1]))
+				{
+					cout << "you";
+					k = j + 1;
+				}
+				else
+				{
+					if (s[j] >= 'A' && s[j] <= 'Z' && s[j] != 'I')
+						s[j] += 32;
+					cout << s[j];
+				}
+			}
+			else {
+				if (s[j] == ' ' && (isdigit(s[j + 1]) || isalpha(s[j + 1]) || s[j + 1] == '\'')&&begin)
+					cout << " ";
+				else if (s[j] == '?')
+					cout << "!";
+				else
+					cout << s[j];
+			}
+		}
+		cout << "\n";
 	}
 	return 0;
 }
