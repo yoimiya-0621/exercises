@@ -63,5 +63,23 @@
     <ClCompile Include="14B_4_飞机降落.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="13B_1_九进制转十进制.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="13B_2_顺子日期.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="13B_3_刷题统计.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="13B_4_修剪灌木.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="13B_5_进制减法.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="13B_6_统计子矩阵.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
