@@ -81,5 +81,17 @@
     <ClCompile Include="13B_6_统计子矩阵.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="13B_7_积木画.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="13B_8_扫雷.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="13B_9_李白喝酒加强版.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="13B_10_砍竹子.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
