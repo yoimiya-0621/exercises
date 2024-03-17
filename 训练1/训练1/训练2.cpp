@@ -619,83 +619,83 @@
 //
 //    return 0;
 //}
-#include <iostream>
-#include <cmath>
-#include <stdio.h>
-using namespace std;
-class Point {
-public:
-    float x, y;
-    Point()
-    {}
-    Point(float xx, float yy)
-    {
-        x = xx;
-        y = yy;
-    }
-private:
-};
-class Polygon
-{
-public:
-    Polygon()
-    {}
-    Polygon(int n)
-    {
-        count = n;
-        pts = new Point[n];
-    }
-    void setVertice(int i, const Point& p)
-    {
-        *(pts + i) = p;
-    }
-    Point  getVertice(int i) {
-       return *(pts + i);
-    }
-    ~Polygon()
-    {
-        delete[] pts;
-    }
-    float getArea()
-    {
-        float sum = 0;
-        for (int i = 1; i < count - 1; i++)
-        {
-            float a = sqrt(pow((pts->x) - ((pts + i)->x), 2) + pow((pts->y) - ((pts + i)->y), 2));
-            float b = sqrt(pow((pts->x) - ((pts + i + 1)->x), 2) + pow((pts->y) - ((pts + i + 1)->y), 2));
-            float c = sqrt(pow(((pts + i + 1)->x) - ((pts + i)->x), 2) + pow(((pts + i + 1)->y) - ((pts + i)->y), 2));
-            float p = (a + b + c) / 2;
-            sum += sqrt(p * (p - a) * (p - b) * (p - c));
-        }
-        return sum;
-    }
-private:
-    Point* pts;
-    int count;
-};
-
-
-//请在此处定义Point类及Polygon类
-
-int main()
-{
-    Polygon poly1(6);
-    poly1.setVertice(0, Point(0, 0));
-    poly1.setVertice(1, Point(33.2, 30));
-    poly1.setVertice(2, Point(61.2, 0));
-    poly1.setVertice(3, Point(61, -29.1));
-    poly1.setVertice(4, Point(20, -57.7));
-    poly1.setVertice(5, Point(0, -33.2));
-    printf("Vertex 3 of poly 1: (%.1f, %.1f)\n", poly1.getVertice(3).x, poly1.getVertice(3).y);
-    printf("Area of polygon 1: %.1f\n", poly1.getArea());
-
-
-    Polygon poly2(4);
-    poly2.setVertice(0, Point(0, 0));
-    poly2.setVertice(1, Point(33.2, 0.7));
-    poly2.setVertice(2, Point(20.3, -22));
-    poly2.setVertice(3, Point(5.1, -19.7));
-    printf("Vertex 2 of poly 2: (%.1f, %.1f)\n", poly2.getVertice(2).x, poly2.getVertice(2).y);
-    printf("Area of polygon 2: %.1f\n", poly2.getArea());
-    return 0;
-}
+//#include <iostream>
+//#include <cmath>
+//#include <stdio.h>
+//using namespace std;
+//class Point {
+//public:
+//    float x, y;
+//    Point()
+//    {}
+//    Point(float xx, float yy)
+//    {
+//        x = xx;
+//        y = yy;
+//    }
+//private:
+//};
+//class Polygon
+//{
+//public:
+//    Polygon()
+//    {}
+//    Polygon(int n)
+//    {
+//        count = n;
+//        pts = new Point[n];
+//    }
+//    void setVertice(int i, const Point& p)
+//    {
+//        *(pts + i) = p;
+//    }
+//    Point  getVertice(int i) {
+//       return *(pts + i);
+//    }
+//    ~Polygon()
+//    {
+//        delete[] pts;
+//    }
+//    float getArea()
+//    {
+//        float sum = 0;
+//        for (int i = 1; i < count - 1; i++)
+//        {
+//            float a = sqrt(pow((pts->x) - ((pts + i)->x), 2) + pow((pts->y) - ((pts + i)->y), 2));
+//            float b = sqrt(pow((pts->x) - ((pts + i + 1)->x), 2) + pow((pts->y) - ((pts + i + 1)->y), 2));
+//            float c = sqrt(pow(((pts + i + 1)->x) - ((pts + i)->x), 2) + pow(((pts + i + 1)->y) - ((pts + i)->y), 2));
+//            float p = (a + b + c) / 2;
+//            sum += sqrt(p * (p - a) * (p - b) * (p - c));
+//        }
+//        return sum;
+//    }
+//private:
+//    Point* pts;
+//    int count;
+//};
+//
+//
+////请在此处定义Point类及Polygon类
+//
+//int main()
+//{
+//    Polygon poly1(6);
+//    poly1.setVertice(0, Point(0, 0));
+//    poly1.setVertice(1, Point(33.2, 30));
+//    poly1.setVertice(2, Point(61.2, 0));
+//    poly1.setVertice(3, Point(61, -29.1));
+//    poly1.setVertice(4, Point(20, -57.7));
+//    poly1.setVertice(5, Point(0, -33.2));
+//    printf("Vertex 3 of poly 1: (%.1f, %.1f)\n", poly1.getVertice(3).x, poly1.getVertice(3).y);
+//    printf("Area of polygon 1: %.1f\n", poly1.getArea());
+//
+//
+//    Polygon poly2(4);
+//    poly2.setVertice(0, Point(0, 0));
+//    poly2.setVertice(1, Point(33.2, 0.7));
+//    poly2.setVertice(2, Point(20.3, -22));
+//    poly2.setVertice(3, Point(5.1, -19.7));
+//    printf("Vertex 2 of poly 2: (%.1f, %.1f)\n", poly2.getVertice(2).x, poly2.getVertice(2).y);
+//    printf("Area of polygon 2: %.1f\n", poly2.getArea());
+//    return 0;
+//}

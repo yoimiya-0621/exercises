@@ -1,15 +1,2 @@
-﻿  训练2.cpp
-D:\code\personal-algorithm-training\训练1\训练1\训练2.cpp(664,21): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
-D:\code\personal-algorithm-training\训练1\训练1\训练2.cpp(665,21): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
-D:\code\personal-algorithm-training\训练1\训练1\训练2.cpp(666,21): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
-D:\code\personal-algorithm-training\训练1\训练1\训练2.cpp(684,31): warning C4305: “参数”: 从“double”到“float”截断
-D:\code\personal-algorithm-training\训练1\训练1\训练2.cpp(685,31): warning C4305: “参数”: 从“double”到“float”截断
-D:\code\personal-algorithm-training\训练1\训练1\训练2.cpp(686,36): warning C4305: “参数”: 从“double”到“float”截断
-D:\code\personal-algorithm-training\训练1\训练1\训练2.cpp(687,36): warning C4305: “参数”: 从“double”到“float”截断
-D:\code\personal-algorithm-training\训练1\训练1\训练2.cpp(688,35): warning C4305: “参数”: 从“double”到“float”截断
-D:\code\personal-algorithm-training\训练1\训练1\训练2.cpp(695,37): warning C4305: “参数”: 从“double”到“float”截断
-D:\code\personal-algorithm-training\训练1\训练1\训练2.cpp(695,31): warning C4305: “参数”: 从“double”到“float”截断
-D:\code\personal-algorithm-training\训练1\训练1\训练2.cpp(696,31): warning C4305: “参数”: 从“double”到“float”截断
-D:\code\personal-algorithm-training\训练1\训练1\训练2.cpp(697,37): warning C4305: “参数”: 从“double”到“float”截断
-D:\code\personal-algorithm-training\训练1\训练1\训练2.cpp(697,31): warning C4305: “参数”: 从“double”到“float”截断
+﻿  3.cpp
   训练1.vcxproj -> D:\code\personal-algorithm-training\训练1\x64\Debug\训练1.exe

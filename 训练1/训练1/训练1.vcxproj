@@ -133,6 +133,7 @@
   <ItemGroup>
     <ClCompile Include="1.c" />
     <ClCompile Include="2.cpp" />
+    <ClCompile Include="3.cpp" />
     <ClCompile Include="按日期排序.cpp" />
     <ClCompile Include="训练2.cpp" />
   </ItemGroup>
