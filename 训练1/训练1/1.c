@@ -79,3 +79,35 @@
 //	return 0;
 //
 //}
+
+//L1-70-³Ô»ğ¹ø
+//#include <stdio.h>
+//#include <string.h>
+//int main()
+//{
+//	char a[100] = "chi1 huo3 guo1";
+//	int n = 0;
+//
+//	int sum = 0, ans = 0;
+//	while (1)
+//	{
+//		char s[105];
+//		gets(s);
+//		if (s[0] == '.' && s[1] == '\0')
+//			break;
+//		n++;
+//		if (strstr(s, a))
+//		{
+//			if (sum == 0)
+//				ans = n;
+//			sum++;
+//		}
+//	}
+//	printf("%d\n", n);
+//
+//	if (sum)
+//		printf("%d %d", ans, sum);
+//	else
+//		printf("-_-#");
+//	return 0;
+//}
