@@ -93,5 +93,20 @@
     <ClCompile Include="13B_10_砍竹子.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="12B_1_空间.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="12B_2_卡片.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="12B_3_直线.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="12B_4_货物摆放.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="12B_6_时间显示.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
