@@ -108,5 +108,14 @@
     <ClCompile Include="12B_6_时间显示.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="12B_5_路径.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="12B_7_砝码称重.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="12B_8_杨辉三角形.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

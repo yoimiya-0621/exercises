@@ -131,7 +131,10 @@
     <ClCompile Include="12B_2_卡片.cpp" />
     <ClCompile Include="12B_3_直线.cpp" />
     <ClCompile Include="12B_4_货物摆放.cpp" />
+    <ClCompile Include="12B_5_路径.cpp" />
     <ClCompile Include="12B_6_时间显示.cpp" />
+    <ClCompile Include="12B_7_砝码称重.cpp" />
+    <ClCompile Include="12B_8_杨辉三角形.cpp" />
     <ClCompile Include="13B_10_砍竹子.cpp" />
     <ClCompile Include="13B_1_九进制转十进制.cpp" />
     <ClCompile Include="13B_2_顺子日期.cpp" />

@@ -16,7 +16,7 @@
 //int main()
 //{
 //	map<double, int>a;
-//	long long ans = 39;
+//	long long ans = 41;
 //	for (int x = 0; x <= 19; x++)
 //	{
 //		for (int y = 0; y <= 20; y++)
@@ -43,8 +43,9 @@
 //						for (int z = 0; z < k; z++)
 //						{
 //							if (s == c[z].s) {
-//								double ss = (double)(y - c[z].yy) / (x - c[z].xx);
-//								if (ss == s)
+//								double ss = (y - c[z].yy)*(x1-x);
+//								double sss = (y1 - y) * (x - c[z].xx);
+//								if (ss == sss)
 //								{
 //									flag = 0;
 //									break;
