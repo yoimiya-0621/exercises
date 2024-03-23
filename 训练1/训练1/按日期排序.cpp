@@ -133,3 +133,37 @@
 ////			printf("¡„");
 ////	return 0;
 ////}
+
+#include <iostream>
+#include <iomanip>
+#include <string>
+#include <algorithm>
+using namespace std;
+int main()
+{
+	string s;
+
+	cin >> s;
+	int n;
+	cin >> n;
+
+	for (int i = 0; i < n; i++)
+	{
+		int x, y;
+		string a, b;
+		cin >> x >> y >> a >> b ;
+		string str = s.substr(x - 1, y - x+1);
+		s.erase(x - 1, y - x+1);
+		string ss = a + b;
+		int m = s.find(ss);
+		if (m>=0)
+		{
+			s.insert(s.find(ss)+a.size(), str);
+		}
+		else
+			s = s + str;
+	}
+	cout << s;
+	return 0;
+}
+

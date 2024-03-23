@@ -17,9 +17,7 @@
 //int main()
 //{
 //	int n;
-//	cin >> n;
-//	do {
-//
+//	while (cin >> n){
 //		S a[5000];
 //		k = 0;
 //		for (int i = 0; i < n; i++)
@@ -45,10 +43,9 @@
 //		}
 //		sort(a, a + k, cmp);
 //		cout << a[0].s << "\n";
-////		cin >> n;
-////	} while (n != EOF);
-////	return 0;
-////}
+//	} 
+//	return 0;
+//}
 //
 //#include <iostream>
 //#include <string>
@@ -226,50 +223,50 @@
 //	cout << count[count.size()-1];
 //	return 0;
 //}
-#include <iostream>
-#include <algorithm>
-#include <map>
-using namespace std;
-struct S
-{
-	int a;
-	int b;
-}s[1005];
-int c[5000] = { 0 };
-bool cmp(S a, S b)
-{
-	return a.a < b.a;
-}
-int main()
-{
-	int n, m, flag = 0;
-	cin >> n >> m;
-	for (int i = 0; i < m; i++)
-	{
-		cin >> s[i].a >> s[i].b;
-		c[s[i].a] += 1;
-
-	}
-	int sum = 0;
-	for (int i = 0; i < 5000; i++)
-	{
-		if (c[i])
-			sum++;
-	}
-	sort(s, s + m, cmp);
-	for (int i = 0; i < m; i++)
-	{
-		if (s[i].a != s[i + 1].a)
-		{
-			if (c[s[i].a] != c[s[i + 1].a] || sum<=1)
-			{
-				cout << "N";
-				flag = 1;
-				break;
-			}
-		}
-	}
-	if (flag == 0)
-		cout << "Y";
-	return 0;
-}
+//#include <iostream>
+//#include <algorithm>
+//#include <map>
+//using namespace std;
+//struct S
+//{
+//	int a;
+//	int b;
+//}s[1005];
+//int c[5000] = { 0 };
+//bool cmp(S a, S b)
+//{
+//	return a.a < b.a;
+//}
+//int main()
+//{
+//	int n, m, flag = 0;
+//	cin >> n >> m;
+//	for (int i = 0; i < m; i++)
+//	{
+//		cin >> s[i].a >> s[i].b;
+//		c[s[i].a] += 1;
+//
+//	}
+//	int sum = 0;
+//	for (int i = 0; i < 5000; i++)
+//	{
+//		if (c[i])
+//			sum++;
+//	}
+//	sort(s, s + m, cmp);
+//	for (int i = 0; i < m; i++)
+//	{
+//		if (s[i].a != s[i + 1].a)
+//		{
+//			if (c[s[i].a] != c[s[i + 1].a] || sum<=1)
+//			{
+//				cout << "N";
+//				flag = 1;
+//				break;
+//			}
+//		}
+//	}
+//	if (flag == 0)
+//		cout << "Y";
+//	return 0;
+//}
