@@ -143,7 +143,6 @@
 //			string str = s.substr(l, r + 1 - l);
 //			s.insert(k+1, str);
 //			s.erase(l, r + 1 - l);
-//
 //		}
 //		cout << s << "\n";
 //	}
@@ -183,89 +182,89 @@
 //	}
 //	return 0;
 //}
-#include <iostream>
-#include <algorithm>
-#include <map>
-using namespace std;
-struct S {
-	int rate=0;
-	int v;
-}a[105];
-bool cmp1(S a, S b)
-{
-	if (a.rate != b.rate)
-		return a.rate > b.rate;
-	else
-		return a.v > b.v;
-}
-int main()
-{
-	int n, m, k;
-	cin >> n >> m >> k;
-	for (int i = 0; i < n; i++)
-	{
-		cin >> a[i].v;
-		if (a[i].v >= k)
-		{
-			a[i].rate += a[i].v / k;
-			a[i].v = a[i].v % k;
-		}
-	}
-	sort(a, a + n, cmp1);
-	int r[105] = { 0 };
-	map<int, int>site;
-	for (int i = 0; i < n; i++)
-	{
-		if (i == 0)
-		{
-			site[a[i].rate] = i;
-		}
-		if (a[i].rate != a[i + 1].rate)
-		{
-			site[a[i + 1].rate] = i + 1;
-		}
-		r[a[i].rate]++;
-	}
-	for (int i = 0; i < m; i++)
-	{
-		int p, vv;
-		cin >> p >> vv;
-		for (int j = 5; j>=0; j--)
-		{
-			if (r[j]>0)
-			{
-				a[site[r[j]] + p-1].v += vv;
-				if (a[site[r[j]] + p - 1].v >= k)
-				{
-					a[site[r[j]] + p - 1].rate += a[site[r[j]] + p - 1].v / k;
-					a[site[r[j]] + p - 1].v = a[site[r[j]] + p - 1].v % k;
-				}
-			}
-		}
-		
-		sort(a, a + n, cmp1);
-		memset(r, 0, sizeof(r));
-		for (int j = 0; j < 100; j++)
-			site[j] = 0;
-		for (int j = 0; j < n; j++)
-		{
-			if (i == 0)
-			{
-				site[a[i].rate] = i;
-			}
-			if (a[j].rate != a[j + 1].rate)
-			{
-				site[a[j + 1].rate] = j + 1;
-			}
-			r[a[j].rate]++;
-		}
-	}
-	for (int i = 0; i <= 100; i++)
-	{
-		if (r[i])
-		{
-			cout << i << ":" << r[i] << "\n";
-		}
-	}
-	return 0;
-}
+//#include <iostream>
+//#include <algorithm>
+//#include <map>
+//using namespace std;
+//struct S {
+//	int rate=0;
+//	int v;
+//}a[105];
+//bool cmp1(S a, S b)
+//{
+//	if (a.rate != b.rate)
+//		return a.rate > b.rate;
+//	else
+//		return a.v > b.v;
+//}
+//int main()
+//{
+//	int n, m, k;
+//	cin >> n >> m >> k;
+//	for (int i = 0; i < n; i++)
+//	{
+//		cin >> a[i].v;
+//		if (a[i].v >= k)
+//		{
+//			a[i].rate += a[i].v / k;
+//			a[i].v = a[i].v % k;
+//		}
+//	}
+//	sort(a, a + n, cmp1);
+//	int r[105] = { 0 };
+//	map<int, int>site;
+//	for (int i = 0; i < n; i++)
+//	{
+//		if (i == 0)
+//		{
+//			site[a[i].rate] = i;
+//		}
+//		if (a[i].rate != a[i + 1].rate)
+//		{
+//			site[a[i + 1].rate] = i + 1;
+//		}
+//		r[a[i].rate]++;
+//	}
+//	for (int i = 0; i < m; i++)
+//	{
+//		int p, vv;
+//		cin >> p >> vv;
+//		for (int j = 5; j>=0; j--)
+//		{
+//			if (r[j]>0)
+//			{
+//				a[site[r[j]] + p-1].v += vv;
+//				if (a[site[r[j]] + p - 1].v >= k)
+//				{
+//					a[site[r[j]] + p - 1].rate += a[site[r[j]] + p - 1].v / k;
+//					a[site[r[j]] + p - 1].v = a[site[r[j]] + p - 1].v % k;
+//				}
+//			}
+//		}
+//		
+//		sort(a, a + n, cmp1);
+//		memset(r, 0, sizeof(r));
+//		for (int j = 0; j < 100; j++)
+//			site[j] = 0;
+//		for (int j = 0; j < n; j++)
+//		{
+//			if (i == 0)
+//			{
+//				site[a[i].rate] = i;
+//			}
+//			if (a[j].rate != a[j + 1].rate)
+//			{
+//				site[a[j + 1].rate] = j + 1;
+//			}
+//			r[a[j].rate]++;
+//		}
+//	}
+//	for (int i = 0; i <= 100; i++)
+//	{
+//		if (r[i])
+//		{
+//			cout << i << ":" << r[i] << "\n";
+//		}
+//	}
+//	return 0;
+//}

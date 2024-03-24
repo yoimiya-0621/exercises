@@ -1,51 +1,53 @@
-//#include <iostream>
-//#include <algorithm>
-//using namespace std;
-//struct S 
-//{
-//	string s;
-//	int count;
-//};
-//int k = 0;
-//bool cmp(S a, S b)
-//{
-//	if (a.count != b.count)
-//		return a.count > b.count;
-//	else
-//		return a.s < b.s;
-//}
-//int main()
-//{
-//	int n;
-//	while (cin >> n){
-//		S a[5000];
-//		k = 0;
-//		for (int i = 0; i < n; i++)
-//		{
-//			string s;
-//			cin >> s;
-//			int flag = 0;
-//			for (int j = 0; j < k; j++)
-//			{
-//				if (s == a[j].s)
-//				{
-//					flag = 1;
-//					a[j].count++;
-//					break;
-//				}
-//			}
-//			if (flag == 0)
-//			{
-//				a[k].s = s;
-//				a[k].count++;
-//				k++;
-//			}
-//		}
-//		sort(a, a + k, cmp);
-//		cout << a[0].s << "\n";
-//	} 
-//	return 0;
-//}
+#include <iostream>
+#include <algorithm>
+using namespace std;
+struct S 
+{
+	string s;
+	int count;
+};
+int k = 0;
+bool cmp(S a, S b)
+{
+	if (a.count != b.count)
+		return a.count > b.count;
+	else
+		return a.s < b.s;
+}
+int main()
+{
+	int n;
+	while (cin >> n){
+		struct S a[5000];
+
+		k = 1;
+		for (int i = 1; i <= n; i++)
+		{
+			string s;
+			cin >> s;
+			int flag = 0;
+			for (int j = 1; j <= k; j++)
+			{
+				if (s == a[j].s)
+				{
+					flag = 1;
+					a[j].count++;
+					break;
+				}
+			}
+			if (flag == 0)
+			{
+				a[k].s = s;
+				a[k].count++;
+				k++;
+			}
+		}
+		sort(a+1, a + k+1, cmp);
+		cout << a[1].s << "\n";
+	} 
+	return 0;
+}
+
 //
 //#include <iostream>
 //#include <string>
