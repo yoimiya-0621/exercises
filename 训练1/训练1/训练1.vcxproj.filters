@@ -36,5 +36,8 @@
     <ClCompile Include="分组赛4.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="天梯赛选拔_外校.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
