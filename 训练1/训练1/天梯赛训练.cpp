@@ -67,3 +67,127 @@ int main()
 //		cout << 0;
 //	return 0;
 //}
+
+//#include <iostream>
+//using namespace std;
+//
+//class A {
+//public:
+//	A() { cout << "1"; }
+//	~A() { cout << "2"; }
+//};
+//class B : public A {
+//public:
+//	B() { cout << "3"; }
+//	~B() { cout << "4"; }
+//};
+//int main() {
+//	B b;
+//	return 0;
+//}
+//#include<iostream>
+//using namespace std;
+//class A
+//{
+//public:
+//	A() { cout << "A"; }
+//};
+//class B
+//{
+//public:
+//	B() { cout << "B"; }
+//};
+//class C :public A
+//{
+//	B b;
+//public:
+//	C() { cout << "C"; }
+//};
+//int main() {
+//	C obj;
+//	return 0;
+//}
+//#include<iostream>
+//using namespace std;
+//class A {
+//public:
+//	A(int i) { x = i; }
+//	void dispa() {
+//		cout << x << ',';
+//	}
+//private:
+//	int x;
+//};
+//class B : public A {
+//public:
+//	B(int i) : A(i + 10) {
+//		x = i;
+//	}
+//	void dispb() {
+//		dispa();
+//		cout << x << endl;
+//	}
+//private:
+//	int x;
+//};
+//int main() {
+//	B b(2);
+//	b.dispb();
+//	return 0;
+//}
+//#include<iostream>
+//using namespace std;
+//class AA {
+//public:
+//	AA() { cout << "A"; }
+//	~AA() { cout << "a"; }
+//};
+//class BB : public AA {
+//	AA aa;
+//public:
+//	BB() { cout << "B"; }
+//	~BB() { cout << "b"; }
+//};
+//int main() {
+//	BB bb;
+//	return 0;
+//}
+#include <iostream>
+using namespace std;
+class A {
+public:
+	A() {
+		cout << "调用A的构造函数" << "\n";
+	}
+	
+private:
+	int a;
+protected:
+	void inia(int x) {
+		a = x;
+		cout << "a:" << a << "\n";
+	}
+};
+class B :public A {
+public:
+	B() {
+		cout << "调用B的构造函数" << "\n";
+	}
+	
+private:
+	int b;
+	
+protected:
+	int xb;
+	void inib(int x) {
+		b = x;
+		cout << "b:" << b << "\n";
+	}
+};
+
+int main()
+{
+	B b;
+	b.inibb(2);
+	return 0;
+}
