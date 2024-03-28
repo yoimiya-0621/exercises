@@ -35,6 +35,23 @@
 //        return ans;
 //    }
 //};
+//4.寻找两个正序数组的中位数
+// class Solution {
+//public:
+//    double findMedianSortedArrays(vector<int>& nums1, vector<int>& nums2) {
+//        int a[100000];
+//        int n = 0;
+//        for (int i = 0; i < nums1.size(); i++)
+//            a[n++] = nums1[i];
+//        for (int i = 0; i < nums2.size(); i++)
+//            a[n++] = nums2[i];
+//        sort(a, a + n);
+//        if (n % 2 == 1)
+//            return (double)a[n / 2];
+//        else
+//            return (double)(a[n / 2] + a[n / 2 - 1]) / 2;
+//    }
+//};
 //5.最长子回文串
 //class Solution {
 //public:
