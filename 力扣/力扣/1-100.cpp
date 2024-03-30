@@ -132,3 +132,117 @@
 //        return ans;
 //    }
 //};
+//7.整数反转
+//class Solution {
+//public:
+//    int reverse(long long x) {
+//        long long f = 0, y = 1;
+//        if (x < 0)
+//        {
+//            y = -1;
+//            x = -x;
+//        }
+//        while (x != 0) {
+//            f *= 10;
+//            f += x % 10;
+//            x /= 10;
+//            if (f >= (long long)pow(2, 31) - 1 || f <= -(long long)pow(2, 31))
+//                return 0;
+//        }
+//        return (int)f * y;
+//    }
+//};
+//8.字符串换整数(Atoi)
+//class Solution {
+//public:
+//    int myAtoi(string s) {
+//        long long f = 1, x = 0, flag = 0;
+//        for (int i = 0; i < s.size(); i++)
+//        {
+//            if (flag == 0)
+//            {
+//                if (s[i] == '+') {
+//                    f = 1;
+//                    flag = 1;
+//                    continue;
+//                }
+//                else if (s[i] == '-')
+//                {
+//                    f = -1;
+//                    flag = 1;
+//                    continue;
+//                }
+//                else if (isdigit(s[i])) {
+//                    f = 1;
+//                    x += s[i] - '0';
+//                    flag = 1;
+//                    continue;
+//                }
+//            }
+//            if (isdigit(s[i]))
+//            {
+//                x = x * 10 + s[i] - '0';
+//            }
+//            else if (s[i] == ' ' && flag < 1)
+//                continue;
+//            else
+//                break;
+//            if (f == 1 && x >= (long long)pow(2, 31) - 1)
+//                return (long long)pow(2, 31) - 1;
+//            else if (f == -1 && x >= pow(2, 31))
+//                return -(long long)pow(2, 31);
+//        }
+//        return f * x;
+//    }
+//};
+//9.回文数
+//class Solution {
+//public:
+//    bool isPalindrome(int x) {
+//        if (x < 0)
+//            return false;
+//        if (x >= 0 && x <= 9)
+//            return true;
+//        string s;
+//        while (x != 0)
+//        {
+//            s.push_back(x % 10 + '0');
+//            x /= 10;
+//        }
+//        string y = s;
+//        reverse(y.begin(), y.end());
+//        if (y == s)
+//            return true;
+//        else
+//            return false;
+//
+//    }
+//};
+//10.正则表达式匹配
+//class Solution {
+//public:
+//    bool isMatch(string s, string p) {
+//        int n = s.size(), m = p.size();
+//        vector<vector<bool>>dp(n + 1, vector<bool>(m + 1));
+//        dp[0][0] = true;
+//        for (int j = 0; j < m; j++)
+//        {
+//            if (j >= 1 && p[j - 1] == '*' && (j == 1 || dp[0][j - 2] == true))
+//                dp[0][j] = true;
+//        }
+//        for (int i = 1; i <= n; i++) {
+//            for (int j = 1; j <= m; j++) {
+//                if (s[i - 1] == p[j - 1] || p[j - 1] == '.') {
+//                    dp[i][j] = dp[i - 1][j - 1];
+//                }
+//                else if (p[j - 1] == '*') {
+//                    if (s[i - 1] == p[j - 2] || p[j - 2] == '.')
+//                        dp[i][j] = dp[i - 1][j] | dp[i][j - 2] | dp[i][j - 1];
+//                    else
+//                        dp[i][j] = dp[i][j - 2];
+//                }
+//            }
+//        }
+//        return dp[n][m];
+//    }
+//};
