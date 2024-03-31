@@ -224,32 +224,32 @@ int main()
 //	printf("%.6lf", sum);
 //	return 0;
 // }
-#include<iostream>
-using namespace std;
-class Box {
-public:
-	Box(int l = 0, int w = 0, int h = 0);
-	int area();
-private:
-	int length;
-	int width;
-	int high;
-};
-Box::Box(int l, int w , int h) {
-	length = l;
-	width = w;
-	high = h;
-
-}
-int Box::area() {
-	return length * width * high;
-}
-int main() {
-	int length;
-	int width;
-	int high;
-	cin >> length >> width >>  high ;
-	Box b(length, width, high);
-	cout << b.area() << endl;
-	return 0;
-}
+//#include<iostream>
+//using namespace std;
+//class Box {
+//public:
+//	Box(int l = 0, int w = 0, int h = 0);
+//	int area();
+//private:
+//	int length;
+//	int width;
+//	int high;
+//};
+//Box::Box(int l, int w , int h) {
+//	length = l;
+//	width = w;
+//	high = h;
+//
+//}
+//int Box::area() {
+//	return length * width * high;
+//}
+//int main() {
+//	int length;
+//	int width;
+//	int high;
+//	cin >> length >> width >>  high ;
+//	Box b(length, width, high);
+//	cout << b.area() << endl;
+//	return 0;
+//}
