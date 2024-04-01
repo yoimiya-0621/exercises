@@ -246,3 +246,20 @@
 //        return dp[n][m];
 //    }
 //};
+//11.盛水最多的容器
+//class Solution {
+//public:
+//    int maxArea(vector<int>& height) {
+//        int m = 0;
+//        int l = 0, r = height.size() - 1;
+//        while (l < r)
+//        {
+//            m = max(m, (r - l) * min(height[l], height[r]));
+//            if (height[l] < height[r])
+//                l++;
+//            else
+//                r--;
+//        }
+//        return m;
+//    }
+//};
