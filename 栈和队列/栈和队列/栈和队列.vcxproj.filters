@@ -21,5 +21,20 @@
     <ClCompile Include="前缀表达式.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="列车厢调度.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="栈操作的合法性.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="简单计算机.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="特殊堆栈.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="包装机.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

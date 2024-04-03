@@ -127,7 +127,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="列车厢调度.cpp" />
     <ClCompile Include="前缀表达式.cpp" />
+    <ClCompile Include="包装机.cpp" />
+    <ClCompile Include="栈操作的合法性.cpp" />
+    <ClCompile Include="特殊堆栈.cpp" />
+    <ClCompile Include="简单计算机.cpp" />
     <ClCompile Include="表达式转换.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
