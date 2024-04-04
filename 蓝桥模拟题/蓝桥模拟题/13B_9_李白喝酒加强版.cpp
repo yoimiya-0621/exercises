@@ -24,3 +24,54 @@
 //	cout << ans;
 //	return 0;
 //}
+
+#include <iostream>
+using namespace std;
+int n,m,dp[105][105][105] = { 0 };
+int main()
+{
+	cin >> n>>m;
+	dp[2][0][0] = 1;
+	for(int i=0;i<=n;i++)
+		for(int j=0;j<=m;j++)
+			for (int k = 0; k <= 2 * n; k++)
+			{
+				if (j >= 1)
+				{
+					dp[k][i][j] += dp[k + 1][i][j - 1];
+				}
+				if (k % 2 == 0 && i >= 1)
+				{
+					dp[k][i][j] += dp[k / 2][i - 1][j];
+				}
+				dp[k][i][j] %= 1000000007;
+			}
+	cout << dp[1][n][m-1];
+	return 0;
+}
+
+//#include <iostream>
+//using namespace std;
+//int dp[105][105][105];
+//int main() {
+//	int n, m;
+//	cin >> n >> m;
+//	dp[2][0][0] = 1;
+//	for (int i = 0; i <= n; i++) {
+//		for (int j = 0; j <= m; j++) {
+//			for (int k = 0; k <= 2*n; k++) {
+//				if (j >= 1) 
+//				{
+//					dp[k][i][j] += dp[k + 1][i][j - 1];
+//				}
+//				if (k % 2 == 0 && i >=1 ) 
+//				{
+//					dp[k][i][j] += dp[k / 2][i - 1][j];
+//				}
+//				dp[k][i][j] %= 1000000007;
+//			}
+//		}
+//	}
+//	cout << dp[1][n][m-1];
+//	return 0;
+//}

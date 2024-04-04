@@ -52,3 +52,29 @@
 //	cout << ans;
 //	return 0;
 //}
+
+//#include <iostream>
+//using namespace std;
+//#define MOD 1000000007;
+//#define ll long long
+//ll ans = 0;
+//ll dp[10000010][3] = { 0 };
+//int main()
+//{
+//	ll n;
+//	cin >> n;
+//	dp[1][0] = 1;
+//	dp[1][1] = 0;
+//	dp[1][2] = 1;
+//	dp[2][0] = 2;
+//	dp[2][1] = 1;
+//	dp[2][2] = 1;
+//	for (int i = 3; i <= n; i++)
+//	{
+//		dp[i][0] = (dp[i - 1][0] + dp[i - 1][1] + dp[i - 1][2] + dp[i - 2][0])%MOD;
+//		dp[i][1] = (dp[i - 2][0] + dp[i-1][2]) % MOD;
+//		dp[i][2] = (dp[i - 2][0] + dp[i-1][1]) % MOD;
+//	}
+//	cout << dp[n][0];
+//	return 0;
+//}
