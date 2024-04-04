@@ -36,5 +36,14 @@
     <ClCompile Include="包装机.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="盲盒包装流水线.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="堆宝塔.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="银行排队问题之单队列多窗口服务.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

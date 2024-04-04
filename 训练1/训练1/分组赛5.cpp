@@ -306,46 +306,46 @@
 //	return 0;
 //}
 
-#include <iostream>
-#include <algorithm>
-#include <map>
-using namespace std;
-struct S 
-{
-    int father;
-    int id;
-    int x;
-}s[1000];
-bool cmp(S a, S b)
-{
-    if (a.father == b.father)
-        return a.id > b.id;
-    else
-        return a.father < b.father;
-}
-int main()
-{
-    int n, k;
-    int sum = 0;
-    cin >> n;
-    cin >> k;
-    map<int, int>flag;
-    for (int i = 0; i < n - 1; i++)
-    {
-        cin >> s[i].father >> s[i].id >> s[i].x;
-        flag[s[i].father] += s[i].id + 1;
-        /*if(s[i].father==k)
-        {flag[k]+=s[i].id+1;
-         if(flag[k]==3)
-             sum+=k;*/
-    }
-}
-sort(s, s + n - 1, cmp);
-for (int i = 0; i < n - 1; i++)
-{
-    if (flag[s[i].x] == 0)
-        sum += s[i].x;
-}
-cout << sum;
-return 0;
-}
+//#include <iostream>
+//#include <algorithm>
+//#include <map>
+//using namespace std;
+//struct S 
+//{
+//    int father;
+//    int id;
+//    int x;
+//}s[1000];
+//bool cmp(S a, S b)
+//{
+//    if (a.father == b.father)
+//        return a.id > b.id;
+//    else
+//        return a.father < b.father;
+//}
+//int main()
+//{
+//    int n, k;
+//    int sum = 0;
+//    cin >> n;
+//    cin >> k;
+//    map<int, int>flag;
+//    for (int i = 0; i < n - 1; i++)
+//    {
+//        cin >> s[i].father >> s[i].id >> s[i].x;
+//        flag[s[i].father] += s[i].id + 1;
+//        /*if(s[i].father==k)
+//        {flag[k]+=s[i].id+1;
+//         if(flag[k]==3)
+//             sum+=k;*/
+//    }
+//}
+//sort(s, s + n - 1, cmp);
+//for (int i = 0; i < n - 1; i++)
+//{
+//    if (flag[s[i].x] == 0)
+//        sum += s[i].x;
+//}
+//cout << sum;
+//return 0;
+//}

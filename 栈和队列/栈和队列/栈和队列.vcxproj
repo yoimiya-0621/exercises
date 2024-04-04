@@ -130,10 +130,13 @@
     <ClCompile Include="列车厢调度.cpp" />
     <ClCompile Include="前缀表达式.cpp" />
     <ClCompile Include="包装机.cpp" />
+    <ClCompile Include="堆宝塔.cpp" />
     <ClCompile Include="栈操作的合法性.cpp" />
     <ClCompile Include="特殊堆栈.cpp" />
+    <ClCompile Include="盲盒包装流水线.cpp" />
     <ClCompile Include="简单计算机.cpp" />
     <ClCompile Include="表达式转换.c" />
+    <ClCompile Include="银行排队问题之单队列多窗口服务.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
