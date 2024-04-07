@@ -136,6 +136,7 @@
     <ClCompile Include="3.cpp" />
     <ClCompile Include="分组赛4.cpp" />
     <ClCompile Include="分组赛5.cpp" />
+    <ClCompile Include="分组赛6.cpp" />
     <ClCompile Include="天梯赛训练.cpp" />
     <ClCompile Include="天梯赛选拔_外校.cpp" />
     <ClCompile Include="按日期排序.cpp" />
