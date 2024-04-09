@@ -302,45 +302,121 @@
 //	return 0;
 //}
 
+//#include <iostream>
+//#include <deque>
+//using namespace std;
+//int main()
+//{
+//    string s = "1+1=2,2+2=4,3+3=6,4+4=8";
+//    for (int z = 5; z <= 200; z++)
+//    {
+//        int j = z * 2;
+//        int i = z;
+//        string xx;
+//        string ch = "+";
+//        string ch2 = "=";
+//        string ch3 = ",";
+//        string yy;
+//        deque<char>x;
+//        deque<char>y;
+//        while (i > 0)
+//        {
+//            x.push_front(i % 10+'0');
+//            i /= 10;
+//        }
+//        while (j > 0)
+//        {
+//            y.push_front(j % 10+'0');
+//            j /= 10;
+//        }
+//        for (int k = 0; k < x.size(); k++)
+//            xx.push_back(x[k]);
+//        for (int k = 0; k < y.size(); k++)
+//            yy.push_back(y[k]);
+//        s = s + ch3 + xx + ch + xx + ch2 + yy;
+//    }
+//    int n, k = 0;
+//    cin >> n;
+//    while (n--)
+//    {
+//        cin >> k;
+//        cout << s[k - 1] << "\n";
+//    }
+//    return 0;
+//}
+//#include <iostream>
+//using namespace std;
+//class Complex
+//{
+//public:
+//    Complex(double r = 0, double i = 0) :real(r), imag(i) {    }
+//    Complex operator+(Complex& c2) const;//重载双目运算符'+'
+//    Complex operator-=(Complex& c2); //重载双目运算符'-='
+//    friend Complex operator-(Complex& c1, Complex& c2);
+//    void Display() const;
+//private:
+//    double real;
+//    double imag;
+//};
+//Complex Complex::operator+(Complex& c2)const
+//{
+//    return Complex(real + c2.real, imag + c2.imag);
+//}
+//Complex Complex::operator-=(Complex& c2)
+//{
+//    real -= c2.real;
+//    imag -= c2.imag;
+//    return *this;
+//}
+//Complex feiend Complex::operator-(Complex& c1, Complex& c2)
+//{
+//    return Complex(c1.real - c2.real, c1.imag - c2.imag);
+//}
+//void Complex::Display() const
+//{
+//    cout << "(" << real << ", " << imag << ")" << endl;
+//}
+//
+//int main()
+//{
+//    double r, m;
+//    cin >> r >> m;
+//    Complex c1(r, m);
+//    cin >> r >> m;
+//    Complex c2(r, m);
+//    Complex c3 = c1 + c2;
+//    c3.Display();
+//    c3 = c1 - c2;
+//    c3.Display();
+//    c3 -= c1;
+//    c3.Display();
+//    return 0;
+//}
+
 #include <iostream>
-#include <deque>
 using namespace std;
+class Complex {
+public:
+	Complex(double r = 0, double i = 0) {
+	real = r;
+	imag = i;
+}
+	ostream operator<<(ostream& out2)
+	{
+		out2<< "(" << real << "," << imag << ")";
+		return out2;
+	}
+	/*friend ostream& operator<<(ostream& out1, Complex c)
+	{
+		out1 << "(" << c.real << "," << c.imag << ")";
+		return out1;
+	}*/
+private:
+	double real, imag;
+};
 int main()
 {
-    string s = "1+1=2,2+2=4,3+3=6,4+4=8";
-    for (int z = 5; z <= 200; z++)
-    {
-        int j = z * 2;
-        int i = z;
-        string xx;
-        string ch = "+";
-        string ch2 = "=";
-        string ch3 = ",";
-        string yy;
-        deque<char>x;
-        deque<char>y;
-        while (i > 0)
-        {
-            x.push_front(i % 10+'0');
-            i /= 10;
-        }
-        while (j > 0)
-        {
-            y.push_front(j % 10+'0');
-            j /= 10;
-        }
-        for (int k = 0; k < x.size(); k++)
-            xx.push_back(x[k]);
-        for (int k = 0; k < y.size(); k++)
-            yy.push_back(y[k]);
-        s = s + ch3 + xx + ch + xx + ch2 + yy;
-    }
-    int n, k = 0;
-    cin >> n;
-    while (n--)
-    {
-        cin >> k;
-        cout << s[k - 1] << "\n";
-    }
-    return 0;
+	Complex c(1, 2);
+	cout << c;
+	return 0;
 }

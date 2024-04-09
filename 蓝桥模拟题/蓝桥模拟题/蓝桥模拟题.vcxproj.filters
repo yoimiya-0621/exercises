@@ -117,5 +117,14 @@
     <ClCompile Include="12B_8_杨辉三角形.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="13_A_1裁纸刀.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="13_A_3_求和.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="13_A_4_选数异或.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

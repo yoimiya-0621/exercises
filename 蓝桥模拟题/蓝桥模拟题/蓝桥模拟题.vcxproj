@@ -145,6 +145,9 @@
     <ClCompile Include="13B_7_积木画.cpp" />
     <ClCompile Include="13B_8_扫雷.cpp" />
     <ClCompile Include="13B_9_李白喝酒加强版.cpp" />
+    <ClCompile Include="13_A_1裁纸刀.cpp" />
+    <ClCompile Include="13_A_3_求和.cpp" />
+    <ClCompile Include="13_A_4_选数异或.cpp" />
     <ClCompile Include="14B_1_日期统计.cpp" />
     <ClCompile Include="14B_2_01串的熵.cpp" />
     <ClCompile Include="14B_3_冶炼金属.cpp" />
