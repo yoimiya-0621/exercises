@@ -62,53 +62,75 @@
 //	return 0;
 //}
 
+//#include <iostream>
+//#include <algorithm>
+//#include <map>
+//using namespace std;
+//long long n, m, mi = 500000;
+//struct C {
+//	int a;
+//	int b;
+//}c[200005];
+//bool cmp(C a, C b)
+//{
+//	if (a.a != b.a)
+//		return a.a < b.a;
+//	else
+//		return a.b < b.b;
+//}
+//map<int, long long>ma;
+//int main()
+//{
+//	cin >> n >> m;
+//	for (int i = 0; i < n; i++)
+//		cin >> c[i].a;
+//	for (int i = 0; i < n; i++)
+//	{
+//		cin >> c[i].b;
+//		ma[i] = c[i].b + c[i].a;
+//		mi = min(mi, ma[i]);
+//	}
+//	sort(c, c + n, cmp);
+//	long long sum = 0, i = 0, ans = c[0].a;
+//	while (i + 1 < n) {
+//		if (c[i + 1].a - c[i].a <= c[i].b)
+//		{
+//			sum += (c[i + 1].a - c[i].a) * (i + 1);
+//			if (sum > m)
+//				break;
+//			ans = c[i + 1].a;
+//			if (ans > mi)
+//			{
+//				ans = mi;
+//				break;
+//			}
+//		}
+//		else
+//			break;
+//		i++;
+//	}
+//	cout << ans;
+//	return 0;
+//}
+
 #include <iostream>
-#include <algorithm>
-#include <map>
 using namespace std;
-long long n, m, mi = 500000;
-struct C {
-	int a;
-	int b;
-}c[200005];
-bool cmp(C a, C b)
-{
-	if (a.a != b.a)
-		return a.a < b.a;
-	else
-		return a.b < b.b;
-}
-map<int, long long>ma;
+string s, ans;
 int main()
 {
-	cin >> n >> m;
-	for (int i = 0; i < n; i++)
-		cin >> c[i].a;
-	for (int i = 0; i < n; i++)
+	cin >> s;
+	for (int i = 0; i + 1 < s.size(); i++)
 	{
-		cin >> c[i].b;
-		ma[i] = c[i].b + c[i].a;
-		mi = min(mi, ma[i]);
-	}
-	sort(c, c + n, cmp);
-	long long sum = 0, i = 0, ans = c[0].a;
-	while (i + 1 < n) {
-		if (c[i + 1].a - c[i].a <= c[i].b)
+		if (s[i] == s[i + 1] && s[i] == 'L')
 		{
-			sum += (c[i + 1].a - c[i].a) * (i + 1);
-			if (sum > m)
-				break;
-			ans = c[i + 1].a;
-			if (ans > mi)
-			{
-				ans = mi;
-				break;
-			}
+
 		}
 		else
-			break;
-		i++;
+		{
+			ans.push_back(s[i]);
+		}
 	}
+	ans.push_back(s[s.size() - 1]);
 	cout << ans;
 	return 0;
 }
