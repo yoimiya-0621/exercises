@@ -393,30 +393,30 @@
 //    return 0;
 //}
 
-#include <iostream>
-using namespace std;
-class Complex {
-public:
-	Complex(double r = 0, double i = 0) {
-	real = r;
-	imag = i;
-}
-	ostream operator<<(ostream& out2)
-	{
-		out2<< "(" << real << "," << imag << ")";
-		return out2;
-	}
-	/*friend ostream& operator<<(ostream& out1, Complex c)
-	{
-		out1 << "(" << c.real << "," << c.imag << ")";
-		return out1;
-	}*/
-private:
-	double real, imag;
-};
-int main()
-{
-	Complex c(1, 2);
-	cout << c;
-	return 0;
-}
+//#include <iostream>
+//using namespace std;
+//class Complex {
+//public:
+//	Complex(double r = 0, double i = 0) {
+//	real = r;
+//	imag = i;
+//}
+//	ostream operator<<(ostream& out2)
+//	{
+//		out2<< "(" << real << "," << imag << ")";
+//		return out2;
+//	}
+//	/*friend ostream& operator<<(ostream& out1, Complex c)
+//	{
+//		out1 << "(" << c.real << "," << c.imag << ")";
+//		return out1;
+//	}*/
+//private:
+//	double real, imag;
+//};
+//int main()
+//{
+//	Complex c(1, 2);
+//	cout << c;
+//	return 0;
+//}
