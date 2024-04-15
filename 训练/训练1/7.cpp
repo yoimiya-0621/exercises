@@ -257,45 +257,45 @@
 //	}
 //	return 0;
 //}
-#include <iostream>
-#include <map>
-using namespace std;
-int n, m, sum = 0;
-int ans[10005] = { 0 };
-int main()
-{
-    map<int, int>dao;
-    cin >> n >> m;
-    int x, y;
-    int c = 0;
-    for (int i = 0; i < m; i++)
-    {
-        cin >> x >> y;
-        if (dao[x] == 0 && dao[y] == 0)
-        {
-            c++;
-            dao[x] = c;
-            dao[y] = c;
-        }
-        else if (dao[x] == 0 && dao[y] != 0)
-        {
-            dao[x] = dao[y];
-        }
-        else if (dao[x] != 0 && dao[y] == 0)
-        {
-            dao[y] = dao[x];
-        }
-        else {
-            ans[dao[x]] = 1;
-        }
-    }
-    for (int i = 1; i <= c; i++)
-        sum += ans[i];
-    for (int i = 1; i <= n; i++)
-    {
-        if (dao[i] == 0)
-            c++;
-    }
-    cout << c << " " << sum;
-    return 0;
-}
+//#include <iostream>
+//#include <map>
+//using namespace std;
+//int n, m, sum = 0;
+//int ans[10005] = { 0 };
+//int main()
+//{
+//    map<int, int>dao;
+//    cin >> n >> m;
+//    int x, y;
+//    int c = 0;
+//    for (int i = 0; i < m; i++)
+//    {
+//        cin >> x >> y;
+//        if (dao[x] == 0 && dao[y] == 0)
+//        {
+//            c++;
+//            dao[x] = c;
+//            dao[y] = c;
+//        }
+//        else if (dao[x] == 0 && dao[y] != 0)
+//        {
+//            dao[x] = dao[y];
+//        }
+//        else if (dao[x] != 0 && dao[y] == 0)
+//        {
+//            dao[y] = dao[x];
+//        }
+//        else {
+//            ans[dao[x]] = 1;
+//        }
+//    }
+//    for (int i = 1; i <= c; i++)
+//        sum += ans[i];
+//    for (int i = 1; i <= n; i++)
+//    {
+//        if (dao[i] == 0)
+//            c++;
+//    }
+//    cout << c << " " << sum;
+//    return 0;
+//}

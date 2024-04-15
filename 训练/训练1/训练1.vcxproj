@@ -141,6 +141,7 @@
     <ClCompile Include="天梯赛训练.cpp" />
     <ClCompile Include="天梯赛选拔_外校.cpp" />
     <ClCompile Include="按日期排序.cpp" />
+    <ClCompile Include="期中考试.cpp" />
     <ClCompile Include="训练2.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
