@@ -27,5 +27,8 @@
     <ClCompile Include="4_30_div2.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="5_2_div3.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

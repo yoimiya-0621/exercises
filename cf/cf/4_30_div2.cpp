@@ -43,51 +43,51 @@
 //	return 0;
 //}
 //B
-#include <iostream>
-using namespace std;
-int main()
-{
-	int t,n;
-	string s;
-	cin >> t;
-	while (t--)
-	{
-		cin >>n>> s;
-		int sum = 0;
-		if (n == 2) {
-			if ((s == "UU" || s == "DD"))
-			{
-				cout << "NO" << '\n';
-				continue;;
-			}
-			else
-			{
-				cout << "YES" << '\n';
-				continue;;
-			}
-		}
-		if (n == 1)
-		{
-			if (s == "U")
-			{
-				cout << "YES" << '\n';
-				continue;;
-			}
-			else
-			{
-				cout << "NO" << '\n';
-				continue;;
-			}
-		}
-		for (int i = 0; i < n; i++)
-		{
-			if (s[i] == 'U')
-				sum++;
-		}
-		if (sum % 2 == 1)
-			cout << "YES" << '\n';
-		else
-			cout << "NO" << "\n";
-	}
-	return 0;
-}
+//#include <iostream>
+//using namespace std;
+//int main()
+//{
+//	int t,n;
+//	string s;
+//	cin >> t;
+//	while (t--)
+//	{
+//		cin >>n>> s;
+//		int sum = 0;
+//		if (n == 2) {
+//			if ((s == "UU" || s == "DD"))
+//			{
+//				cout << "NO" << '\n';
+//				continue;;
+//			}
+//			else
+//			{
+//				cout << "YES" << '\n';
+//				continue;;
+//			}
+//		}
+//		if (n == 1)
+//		{
+//			if (s == "U")
+//			{
+//				cout << "YES" << '\n';
+//				continue;;
+//			}
+//			else
+//			{
+//				cout << "NO" << '\n';
+//				continue;;
+//			}
+//		}
+//		for (int i = 0; i < n; i++)
+//		{
+//			if (s[i] == 'U')
+//				sum++;
+//		}
+//		if (sum % 2 == 1)
+//			cout << "YES" << '\n';
+//		else
+//			cout << "NO" << "\n";
+//	}
+//	return 0;
+//}
