@@ -1,3 +1,2 @@
 ﻿  5_2_div3.cpp
-D:\code\personal-algorithm-training\cf\cf\5_2_div3.cpp(142,21): warning C4244: “初始化”: 从“double”转换到“__int64”，可能丢失数据
   cf.vcxproj -> D:\code\personal-algorithm-training\cf\x64\Debug\cf.exe

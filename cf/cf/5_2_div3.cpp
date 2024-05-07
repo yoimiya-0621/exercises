@@ -125,36 +125,36 @@
 //	}
 //	return 0;
 //}
-#include <iostream>
-#include <algorithm>
-using namespace std;
-#define ll long long
-ll a[200010] = { 0 };
-
-int main()
-{
-    ll n, k;
-    cin >> n >> k;
-    for (int i = 0; i < n; i++)
-        cin >> a[i];
-
-    sort(a, a + n);
-    ll sum = 0, ans = 1e10;
-    for (int i = 0; i + k - 1 < n; i++)
-    {
-        sum = 0;
-        for (int j = i; j < i + k; j++)
-        {
-            sum += abs(a[j] - a[i + (k-1)/2+(k+1)%2]) * abs(a[j] - a[i + (k - 1) / 2 + (k + 1) % 2]);
-        }
-        if (sum < ans)
-        {
-            ans = sum;
-        }
-    }
-    cout << ans;
-    return 0;
-}
+//#include <iostream>
+//#include <algorithm>
+//using namespace std;
+//#define ll long long
+//ll a[200010] = { 0 };
+//
+//int main()
+//{
+//    ll n, k;
+//    cin >> n >> k;
+//    for (int i = 0; i < n; i++)
+//        cin >> a[i];
+//
+//    sort(a, a + n);
+//    ll sum = 0, ans = 1e10;
+//    for (int i = 0; i + k - 1 < n; i++)
+//    {
+//        sum = 0;
+//        for (int j = i; j < i + k; j++)
+//        {
+//            sum += abs(a[j] - a[i + (k-1)/2+(k+1)%2]) * abs(a[j] - a[i + (k - 1) / 2 + (k + 1) % 2]);
+//        }
+//        if (sum < ans)
+//        {
+//            ans = sum;
+//        }
+//    }
+//    cout << ans;
+//    return 0;
+//}
 //#include <iostream>
 //#include <vector>
 //#include <algorithm>
@@ -184,3 +184,74 @@ int main()
 //
 //    return 0;
 //}
+#include <iostream>
+using namespace std;
+
+/* 请在这里填写答案 */
+template <class T>
+class MyArray {
+private:
+    int size;
+    T* data;
+public:
+    MyArray() {}
+    MyArray(int s)
+    {
+        size = s;
+        data = new T[size];
+        for (int i = 0; i < size; i++)
+            cin >> data[i];
+    }
+    void sort()
+    {
+        T t;
+        for (int i = 0; i < size - 1; i++)
+            for (int j = i + 1; j < size; j++)
+                if (data[i] > data[j])
+                {
+                    t = data[i];
+                    data[i] = data[j];
+                    data[j] = t;
+                }
+    }
+    void display() {
+        for (int i = 0; i < size; i++)
+        {
+            if (i)
+                cout << ' ';
+            cout << data[i];
+        }
+        cout << '\n';
+    }
+    bool check();
+    ~MyArray();
+};
+template<class T>
+MyArray<T>::~MyArray() { delete[] data; }
+
+template<class T>
+bool MyArray<T>::check() {
+    int i;
+    for (i = 0; i < size - 1; i++)
+        if (data[i] > data[i + 1]) { cout << "ERROR!" << endl; return false; }
+    return true;
+}
+int main()
+{
+    MyArray<int>* pI;
+    MyArray<float>* pF;
+    MyArray<char>* pC;
+    int ty, size;
+    cin >> ty;
+    while (ty > 0) {
+        cin >> size;
+        switch (ty) {
+        case 1: pI = new MyArray<int>(size);   pI->sort(); pI->check(); pI->display(); delete pI; break;
+        case 2: pF = new MyArray<float>(size); pF->sort(); pF->check(); pF->display(); delete pF; break;
+        case 3: pC = new MyArray<char>(size);  pC->sort(); pC->check(); pC->display(); delete pC; break;
+        }
+        cin >> ty;
+    }
+    return 0;
+}
+
