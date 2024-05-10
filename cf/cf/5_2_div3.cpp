@@ -184,74 +184,125 @@
 //
 //    return 0;
 //}
+
 #include <iostream>
 using namespace std;
-
-/* 请在这里填写答案 */
-template <class T>
-class MyArray {
+class Time {
 private:
-    int size;
-    T* data;
+    int hh, mm, ss;
 public:
-    MyArray() {}
-    MyArray(int s)
+    Time() {}
+    Time(int h, int m, int s) { hh = h; mm = m; ss = s; }
+    void initTime(int h, int m, int s) { hh = h; mm = m; ss = s; }//初始化
+    void display() { cout << hh << ' ' << mm << ' ' << ss << '\n'; }//输出
+    int operator-(Time& c2)
     {
-        size = s;
-        data = new T[size];
-        for (int i = 0; i < size; i++)
-            cin >> data[i];
+        return 3600 * (hh - c2.hh) + 60 * (mm - c2.mm) + (ss - c2.ss);
     }
-    void sort()
+    // bool operator>(Time &c2)
+    // {
+    //     if(3600*(hh-c2.hh)+60*(mm-c2.mm)+(ss-c2.ss)>0)
+    //         return true;
+    //     else
+    //         return false;
+    // }
+};
+class Date {
+private:
+    double year, month, day;
+public:
+    Date() {}
+    Date(double y, double m, double d) { year = y; month = m; day = d; }
+    void initDate(double y, double m, double d) { year = y; month = m; day = d; }
+    void display() { cout << year << ' ' << month << ' ' << day << '\n'; }
+    bool operator>(Date& c2)
     {
-        T t;
-        for (int i = 0; i < size - 1; i++)
-            for (int j = i + 1; j < size; j++)
-                if (data[i] > data[j])
-                {
-                    t = data[i];
-                    data[i] = data[j];
-                    data[j] = t;
-                }
+        if (year * 365 + month * 30 + day > c2.year * 365 + c2.month * 30 + c2.day)
+            return true;
+        else
+            return false;
     }
-    void display() {
-        for (int i = 0; i < size; i++)
-        {
-            if (i)
-                cout << ' ';
-            cout << data[i];
-        }
-        cout << '\n';
-    }
-    bool check();
-    ~MyArray();
 };
 template<class T>
-MyArray<T>::~MyArray() { delete[] data; }
-
-template<class T>
-bool MyArray<T>::check() {
-    int i;
-    for (i = 0; i < size - 1; i++)
-        if (data[i] > data[i + 1]) { cout << "ERROR!" << endl; return false; }
-    return true;
+double maxn(T x[], int size)//返回最大值的下标（不懂为什么题干给个double类型）
+{
+    int k = 0;
+    if (sizeof(x[0]) < sizeof(Date))
+        for (int i = 0; i < size; i++)
+        {
+            if (x[i] > x[k])
+                k = i;
+        }
+    else
+        for (int i = 0; i < size; i++)
+        {
+            if (x[i] - x[k] > 0)
+                k = i;
+        }
+    return (double)k;
 }
 int main()
 {
-    MyArray<int>* pI;
-    MyArray<float>* pF;
-    MyArray<char>* pC;
-    int ty, size;
+    int intArray[100];
+    double douArray[100];
+    Time timeArray[100];
+    Date dateArray[100];
+    int ty, size = 0;
     cin >> ty;
-    while (ty > 0) {
-        cin >> size;
-        switch (ty) {
-        case 1: pI = new MyArray<int>(size);   pI->sort(); pI->check(); pI->display(); delete pI; break;
-        case 2: pF = new MyArray<float>(size); pF->sort(); pF->check(); pF->display(); delete pF; break;
-        case 3: pC = new MyArray<char>(size);  pC->sort(); pC->check(); pC->display(); delete pC; break;
+    while (ty >= 0)
+    {
+        if (ty == 1) {//整数
+            cin >> intArray[0];
+            while (intArray[size])
+            {
+                size++;
+                cin >> intArray[size];
+            }
+            size++;
+            cout << intArray[(int)maxn(intArray, size)] << '\n';
+        }
+        else if (ty == 2) {//浮点数
+            cin >> douArray[0];
+            while (douArray[size])
+            {
+                size++;
+                cin >> douArray[size];
+            }
+            size++;
+            cout << douArray[(int)maxn(douArray, size)] << '\n';
+        }
+        else if (ty == 3) {//Time类
+            int h, m, s, xx;
+            cin >> h >> m >> s;
+            timeArray[size].initTime(h, m, s);
+            cin >> xx;
+            while (xx)
+            {
+                cin >> m >> s;
+                size++;
+                timeArray[size].initTime(xx, m, s);
+                cin >> xx;
+            }
+            size++;
+            timeArray[(int)maxn(timeArray, size)].display();
+        }
+        else if (ty == 4) {//Date类
+            double y, m, d, xx;
+            cin >> y >> m >> d;
+            dateArray[size].initDate(y, m, d);
+            cin >> xx;
+            while (xx)
+            {
+                cin >> m >> d;
+                size++;
+                dateArray[size].initDate(xx, m, d);
+                cin >> xx;
+            }
+            size++;
+            dateArray[(int)maxn(dateArray, size)].display();
         }
         cin >> ty;
+        size = 0;
     }
     return 0;
 }
-
