@@ -1,4 +1,5 @@
-//#include <bits/stdc++.h>
+//#include <iostream>
+//#include <map>
 //using namespace std;
 //char a[1005][1005];
 //int b[1005][1005];
@@ -8,7 +9,7 @@
 //map<int, int>ans;
 //void dfs(int x, int y)
 //{
-//    if (x <= 0 || y <= 0 || x >= n || y >= n)
+//    if (x <= 0 || y <= 0 || x > n || y > n)
 //        return;
 //    int xx, yy;
 //    b[x][y] = k;
@@ -47,14 +48,14 @@
 //                dfs(i, j);
 //            }
 //        }
-//    //for (int i = 1; i <= n; i++)
-//    //{
-//    //    for (int j = 1; j <= n; j++)
-//    //    {
-//    //        cout << b[i][j] << ' ';
-//    //    }
-//    //    cout << '\n';
-//    //}
+//    /*for (int i = 1; i <= n; i++)
+//    {
+//        for (int j = 1; j <= n; j++)
+//        {
+//            cout << b[i][j] << ' ';
+//        }
+//        cout << '\n';
+//    }*/
 //    for (int i = 1; i <= n; i++)
 //        for (int j = 1; j <= n; j++)
 //        {

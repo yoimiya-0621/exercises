@@ -66,3 +66,29 @@
 //    }
 //    return 0;
 //}
+
+//#include <bits/stdc++.h>
+//using namespace std;
+//int main()
+//{
+//    string s, x;
+//    while (getline(cin, s))
+//    {
+//        if (s[0] == 'l') {
+//            if (s.find("\"") != s.npos || s.find("\'") != s.npos)
+//            {
+//                x = "'string'";
+//            }
+//            else if (s.find("true") != s.npos || s.find("false") != s.npos)
+//            {
+//                x = "'boolean'";
+//            }
+//            else {
+//                x = "'number'";
+//            }
+//        }
+//        else
+//            cout << x << '\n';
+//    }
+//    return 0;
+//}

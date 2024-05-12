@@ -132,6 +132,7 @@
     <ClCompile Include="c.cpp" />
     <ClCompile Include="d.cpp" />
     <ClCompile Include="e.cpp" />
+    <ClCompile Include="训练1.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
