@@ -135,7 +135,6 @@
     <ClCompile Include="4_27_div2.cpp" />
     <ClCompile Include="4_29_div2.cpp" />
     <ClCompile Include="4_30_div2.cpp" />
-    <ClCompile Include="5_10_div4.cpp" />
     <ClCompile Include="5_2_div3.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
