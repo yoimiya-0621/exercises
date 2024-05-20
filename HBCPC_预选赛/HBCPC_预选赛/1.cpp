@@ -1,3 +1,5 @@
+#define _CRT_SECURE_NO_WARNINGS
+
 //#include <iostream>
 //#include <algorithm>
 //using namespace std;
@@ -102,39 +104,73 @@
 //	
 //	return 0;
 //}
-#include <iostream>
-#include <vector>
+//#include <iostream>
+//#include <vector>
+//using namespace std;
+//vector<int>ans;
+//void f(int x, int y, int z)
+//{
+//	if (z < 10) {
+//		ans.push_back(z);
+//	}
+//	else if (z > 10 && z <= 81)
+//	{
+//		ans.push_back(z / 10);
+//		ans.push_back(z % 10);
+//	}
+//}
+//int main()
+//{
+//	int a1, a2, n;
+//	cin >> a1 >> a2 >> n;
+//	int x = a1, y = a2,z=x*y,i=0;
+//	ans.push_back(x);
+//	ans.push_back(y);
+//	while (ans.size() <= n)
+//	{
+//		x = ans[i];
+//		y = ans[i + 1];
+//		z = x * y;
+//		f(x, y, z);
+//		i++;
+//	}
+//	for (int i = 0; i < n; i++)
+//	{
+//		cout << ans[i] << " ";
+//	}
+//	return 0;
+//}
+#include<iostream>
 using namespace std;
-vector<int>ans;
-void f(int x, int y, int z)
-{
-	if (z < 10) {
-		ans.push_back(z);
-	}
-	else if (z > 10 && z <= 81)
-	{
-		ans.push_back(z / 10);
-		ans.push_back(z % 10);
-	}
-}
-int main()
-{
-	int a1, a2, n;
-	cin >> a1 >> a2 >> n;
-	int x = a1, y = a2,z=x*y,i=0;
-	ans.push_back(x);
-	ans.push_back(y);
-	while (ans.size() <= n)
-	{
-		x = ans[i];
-		y = ans[i + 1];
-		z = x * y;
-		f(x, y, z);
-		i++;
-	}
-	for (int i = 0; i < n; i++)
-	{
-		cout << ans[i] << " ";
-	}
-	return 0;
+int main() {
+    int n = 0;
+    cin >> n;
+    char a[110][110] = { 0 };
+    getchar();
+    for (int i = 0; i < n; i++) {
+        for (int j = 0; 1; j++) {
+            scanf("%c", &a[i][j]);
+            if (a[i][j] == '\n')
+                break;
+        }
+        // getchar();
+        // cout << a[i]<<endl;
+    }
+    int ans = 0;
+    for (int i = 0; i < n; i++) {
+        for (int j = 0; 1; j++) {
+            if (a[i][j] == '\0')
+                break;
+            if (a[i][j] >= '0' && a[i][j] <= '9') {
+                cout << a[i];
+                ans++;
+                break;
+            }
+        }
+    }
+    if (ans == 0)
+    {
+        cout << "Not interesting.";
+    }
+    return 0;
 }
