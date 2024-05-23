@@ -73,6 +73,81 @@
 
 //C
 //#include <bits/stdc++.h>
+//#include <iostream>
+//#include <vector>
+//#include <map>
+//#include <algorithm>
+//using namespace std;
+//int a[200010];
+////int b[200010][3];
+//struct B
+//{
+//	int x;
+//	int y;
+//	int z;
+//};
+//bool cmp(B a, B b)
+//{
+//	if (a.x != b.x)
+//		return a.x < b.x;
+//	else
+//	{
+//		if (a.y != b.y)
+//			return a.y < b.y;
+//		else
+//			return a.z < b.z;
+//	}
+//}
+//B b[100000] = { 0 };
+//int c[100000] = { 0 };
+//
+//int main()
+//{
+//	int t,n;
+//	cin >> t;
+//
+//	while (t--)
+//	{
+//		cin >> n;
+//		int ans = 0;
+//		for (int i = 0; i < n; i++)
+//		{
+//			cin >> a[i];
+//			if (i >= 2)
+//			{
+//				b[i - 2].x = a[i - 2];
+//				b[i - 2].y= a[i - 1];
+//				b[i - 2].z = a[i];
+//			}
+//		}
+//		sort(b, b + n - 2, cmp);
+//		for (int i = 1; i < n - 2; i++)
+//		{
+//			if (b[i].x != b[i - 1].x)
+//				c[b[i - 1].x] = i;
+//		}
+//		for (int i = 0; i < n - 2; i++)
+//		{
+//			for (int j = i + 1; j < n-2; j++)
+//			{
+//				if (b[i].x != b[j].x && b[i].y == b[j].y && b[i].z == b[j].z)
+//					ans++;
+//				if (b[i].x == b[j].x && b[i].y != b[j].y && b[i].z == b[j].z)
+//					ans++;
+//				if (b[i].x == b[j].x && b[i].y == b[j].y && b[i].z != b[j].z)
+//					ans++;
+//				if (b[i].x != b[j].x && b[i].y != b[j].y)
+//					j = c[b[j].x];
+//				if (j <= i || j > n - 2)
+//					break;
+//			}
+//		}
+//		memset(b, 0, sizeof(b));
+//		memset(c, 0, sizeof(c));
+//		cout << ans << '\n';
+//	}
+//	return 0;
+//}
 #include <iostream>
 #include <vector>
 #include <map>
@@ -80,34 +155,31 @@
 using namespace std;
 int a[200010];
 //int b[200010][3];
-struct B
+typedef struct B
 {
 	int x;
 	int y;
 	int z;
-};
-bool cmp(B a, B b)
-{
-	if (a.x != b.x)
-		return a.x < b.x;
-	else
+	bool operator<(const B& b2)const
 	{
-		if (a.y != b.y)
-			return a.y < b.y;
+		if (x != b2.x)
+			return x < b2.x;
 		else
-			return a.z < b.z;
+			if (y != b2.y)
+				return y < b2.y;
+			else
+				return z < b2.z;
 	}
-}
-B b[100000] = { 0 };
-int c[100000] = { 0 };
-
+};
+B b[3];
 int main()
 {
-	int t,n;
+	int t, n;
 	cin >> t;
-
+	B flag;
 	while (t--)
 	{
+		map <B,int>mp;
 		cin >> n;
 		int ans = 0;
 		for (int i = 0; i < n; i++)
@@ -115,35 +187,22 @@ int main()
 			cin >> a[i];
 			if (i >= 2)
 			{
-				b[i - 2].x = a[i - 2];
-				b[i - 2].y= a[i - 1];
-				b[i - 2].z = a[i];
+				b[0].x = a[i - 2], b[0].y = a[i - 1], b[0].z = 0;
+				b[1].x = a[i - 2], b[1].y = 0, b[1].z = a[i];
+				b[2].x = 0, b[2].y = a[i - 1], b[2].z = a[i];
+				if(i>=3)
+				{
+					flag = { a[i - 2],a[i - 1],a[i] };
+					if()
+					ans += mp[b[0]];
+					ans += mp[b[1]];
+					ans += mp[b[2]];
+				}
+				mp[b[0]] += 1;
+				mp[b[1]] += 1;
+				mp[b[2]] += 1;
 			}
 		}
-		sort(b, b + n - 2, cmp);
-		for (int i = 1; i < n - 2; i++)
-		{
-			if (b[i].x != b[i - 1].x)
-				c[b[i - 1].x] = i;
-		}
-		for (int i = 0; i < n - 2; i++)
-		{
-			for (int j = i + 1; j < n-2; j++)
-			{
-				if (b[i].x != b[j].x && b[i].y == b[j].y && b[i].z == b[j].z)
-					ans++;
-				if (b[i].x == b[j].x && b[i].y != b[j].y && b[i].z == b[j].z)
-					ans++;
-				if (b[i].x == b[j].x && b[i].y == b[j].y && b[i].z != b[j].z)
-					ans++;
-				if (b[i].x != b[j].x && b[i].y != b[j].y)
-					j = c[b[j].x];
-				if (j <= i || j > n - 2)
-					break;
-			}
-		}
-		memset(b, 0, sizeof(b));
-		memset(c, 0, sizeof(c));
 		cout << ans << '\n';
 	}
 	return 0;

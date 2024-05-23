@@ -1,2 +1,3 @@
 ﻿  5_20_div3.cpp
+D:\code\personal-algorithm-training\cf\cf\5_20_div3.cpp(173,2): warning C4091: “typedef ”: 没有声明变量时忽略“B”的左侧
   cf.vcxproj -> D:\code\personal-algorithm-training\cf\x64\Debug\cf.exe
