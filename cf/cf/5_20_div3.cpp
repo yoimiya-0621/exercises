@@ -148,62 +148,65 @@
 //	}
 //	return 0;
 //}
-#include <iostream>
-#include <vector>
-#include <map>
-#include <algorithm>
-using namespace std;
-int a[200010];
-//int b[200010][3];
-typedef struct B
-{
-	int x;
-	int y;
-	int z;
-	bool operator<(const B& b2)const
-	{
-		if (x != b2.x)
-			return x < b2.x;
-		else
-			if (y != b2.y)
-				return y < b2.y;
-			else
-				return z < b2.z;
-	}
-};
-B b[3];
-int main()
-{
-	int t, n;
-	cin >> t;
-	B flag;
-	while (t--)
-	{
-		map <B,int>mp;
-		cin >> n;
-		int ans = 0;
-		for (int i = 0; i < n; i++)
-		{
-			cin >> a[i];
-			if (i >= 2)
-			{
-				b[0].x = a[i - 2], b[0].y = a[i - 1], b[0].z = 0;
-				b[1].x = a[i - 2], b[1].y = 0, b[1].z = a[i];
-				b[2].x = 0, b[2].y = a[i - 1], b[2].z = a[i];
-				if(i>=3)
-				{
-					flag = { a[i - 2],a[i - 1],a[i] };
-					if()
-					ans += mp[b[0]];
-					ans += mp[b[1]];
-					ans += mp[b[2]];
-				}
-				mp[b[0]] += 1;
-				mp[b[1]] += 1;
-				mp[b[2]] += 1;
-			}
-		}
-		cout << ans << '\n';
-	}
-	return 0;
-}
+//#include <iostream>
+//#include <vector>
+//#include <map>
+//#include <algorithm>
+//using namespace std;
+//int a[200010];
+////int b[200010][3];
+//typedef struct B
+//{
+//	int x;
+//	int y;
+//	int z;
+//	bool operator<(const B& b2)const
+//	{
+//		if (x != b2.x)
+//			return x < b2.x;
+//		else
+//			if (y != b2.y)
+//				return y < b2.y;
+//			else
+//				return z < b2.z;
+//	}
+//};
+//B b[4];
+//int main()
+//{
+//	int t, n;
+//	cin >> t;
+//	B flag;
+//	while (t--)
+//	{
+//		map <B,int>mp;
+//		cin >> n;
+//		long long ans = 0;
+//		for (int i = 0; i < n; i++)
+//		{
+//			cin >> a[i];
+//			if (i >= 2)
+//			{
+//				b[0].x = a[i - 2], b[0].y = a[i - 1], b[0].z = 0;
+//				b[1].x = a[i - 2], b[1].y = 0, b[1].z = a[i];
+//				b[2].x = 0, b[2].y = a[i - 1], b[2].z = a[i];
+//				b[3].x = a[i - 2], b[3].y = a[i - 1], b[3].z = a[i];
+//				mp[b[0]] += 1;
+//				mp[b[1]] += 1;
+//				mp[b[2]] += 1;
+//				mp[b[3]] += 1;
+//				if(i>=3)
+//				{
+//					flag = { a[i - 2],a[i - 1],a[i] };
+//					ans += mp[b[0]];
+//					ans += mp[b[1]];
+//					ans += mp[b[2]];
+//					ans -= 3 * mp[b[3]];
+//				}
+//
+//			}
+//		}
+//		cout << ans << '\n';
+//	}
+//	return 0;
+//}
