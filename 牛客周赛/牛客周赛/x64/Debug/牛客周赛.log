@@ -1,2 +1,3 @@
-﻿  24_5_19_Round43.cpp
+﻿  24_5_24.cpp
+D:\code\personal-algorithm-training\牛客周赛\牛客周赛\24_5_24.cpp(91,19): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
   牛客周赛.vcxproj -> D:\code\personal-algorithm-training\牛客周赛\x64\Debug\牛客周赛.exe
