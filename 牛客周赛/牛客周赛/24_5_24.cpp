@@ -85,27 +85,27 @@
 //	return 0;
 //}
 //D
-#include <iostream>
-#include <algorithm>
-using namespace std;
-const int N = 2e5 + 10;
-int a[N];
-int b[N];
-int main()
-{
-	int n, flag = 0;;
-	cin >> n;
-	for (int i = 0; i < n; i++)
-	{
-		cin >> a[i];
-		if (i)
-		{
-			if (a[i - 1] % a[i] != 0)
-				flag = 1;
-
-		}
-	}
-	if (flag)
-		cout << -1;
-	return 0;
-}
+//#include <iostream>
+//#include <algorithm>
+//using namespace std;
+//const int N = 2e5 + 10;
+//int a[N];
+//int b[N];
+//int main()
+//{
+//	int n, flag = 0;;
+//	cin >> n;
+//	for (int i = 0; i < n; i++)
+//	{
+//		cin >> a[i];
+//		if (i)
+//		{
+//			if (a[i - 1] % a[i] != 0)
+//				flag = 1;
+//
+//		}
+//	}
+//	if (flag)
+//		cout << -1;
+//	return 0;
+//}

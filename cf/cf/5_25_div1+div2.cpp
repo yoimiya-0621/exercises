@@ -132,32 +132,32 @@
 //	return 0;
 //}
 //C
-//#include <bits/stdc++.h>
-#include <iostream>
-#include <algorithm>
-using namespace std;
-#define ll long long
-const int N = 1e5 + 10;
-ll a[N];
-ll b[N];
-int main()
-{
-	int t, n;
-	cin >> t;
-	while (t--)
-	{
-		cin >> n;
-		for (int i = 0; i < n; i++)
-		{
-			cin >> a[i];
-			b[i] = a[i];
-		}
-		sort(b, b + n);
-		for (int i = n - 1; i >= 0; i++)
-		{
-			
-		}
-		memset(a, 0, sizeof(a));
-	}
-	return 0;
-}
+////#include <bits/stdc++.h>
+//#include <iostream>
+//#include <algorithm>
+//using namespace std;
+//#define ll long long
+//const int N = 1e5 + 10;
+//ll a[N];
+//ll b[N];
+//int main()
+//{
+//	int t, n;
+//	cin >> t;
+//	while (t--)
+//	{
+//		cin >> n;
+//		for (int i = 0; i < n; i++)
+//		{
+//			cin >> a[i];
+//			b[i] = a[i];
+//		}
+//		sort(b, b + n);
+//		for (int i = n - 1; i >= 0; i++)
+//		{
+//			
+//		}
+//		memset(a, 0, sizeof(a));
+//	}
+//	return 0;
+//}
