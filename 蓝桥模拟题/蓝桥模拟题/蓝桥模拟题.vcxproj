@@ -152,6 +152,10 @@
     <ClCompile Include="14B_2_01串的熵.cpp" />
     <ClCompile Include="14B_3_冶炼金属.cpp" />
     <ClCompile Include="counter表.cpp" />
+    <ClCompile Include="guo_14B_1.cpp" />
+    <ClCompile Include="guo_14B_2.cpp" />
+    <ClCompile Include="guo_14B_3.cpp" />
+    <ClCompile Include="guo_14B_4.cpp" />
     <ClCompile Include="三连击.cpp" />
     <ClCompile Include="大乘积.cpp" />
     <ClCompile Include="字母数.cpp" />

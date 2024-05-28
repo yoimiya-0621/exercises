@@ -112,25 +112,25 @@
 //	cout << ans;
 //	return 0;
 //}
-
-#include <iostream>
-using namespace std;
-string s, ans;
-int main()
-{
-	cin >> s;
-	for (int i = 0; i + 1 < s.size(); i++)
-	{
-		if (s[i] == s[i + 1] && s[i] == 'L')
-		{
-
-		}
-		else
-		{
-			ans.push_back(s[i]);
-		}
-	}
-	ans.push_back(s[s.size() - 1]);
-	cout << ans;
-	return 0;
-}
+//
+//#include <iostream>
+//using namespace std;
+//string s, ans;
+//int main()
+//{
+//	cin >> s;
+//	for (int i = 0; i + 1 < s.size(); i++)
+//	{
+//		if (s[i] == s[i + 1] && s[i] == 'L')
+//		{
+//
+//		}
+//		else
+//		{
+//			ans.push_back(s[i]);
+//		}
+//	}
+//	ans.push_back(s[s.size() - 1]);
+//	cout << ans;
+//	return 0;
+//}

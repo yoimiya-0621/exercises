@@ -126,5 +126,17 @@
     <ClCompile Include="13_A_4_选数异或.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="guo_14B_1.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="guo_14B_2.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="guo_14B_3.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="guo_14B_4.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
