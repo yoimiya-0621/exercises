@@ -63,3 +63,14 @@
 //	//	cout << a[i]<<' ';
 //	return 0;
 //}
+#include <iostream>
+#include <map>
+#include <vector>
+using namespace std;
+int main()
+{
+	vector<vector<int>>a(10);
+	map<vector<vector<int>>, int>mp;
+
+	return 0;
+}
