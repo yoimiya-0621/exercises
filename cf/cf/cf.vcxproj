@@ -140,6 +140,7 @@
     <ClCompile Include="5_25_div1+div2.cpp" />
     <ClCompile Include="5_26_div2.cpp" />
     <ClCompile Include="5_2_div3.cpp" />
+    <ClCompile Include="5_30_div2.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
