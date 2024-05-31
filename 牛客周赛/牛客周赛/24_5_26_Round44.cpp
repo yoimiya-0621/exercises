@@ -166,48 +166,48 @@
 //	return 0;
 //}
 //
-#include <iostream>
-#include <cmath>
-#include <algorithm>
-#include <vector>
-using namespace std;
-int f(int x)
-{
-	int ans = 0;
-	for (int i = 1; i < sqrt(x); i++)
-	{
-		if (x % i == 0)
-			ans += 2;
-	}
-	if ((int)sqrt(x) * (int)sqrt(x) == x)
-		ans++;
-	return ans;
-}
-int main()
-{
-	int n, q,x;
-	cin >> n >> q;
-	vector<vector<int>>a(250);
-	for (int i = 1; i <= n; i++)
-	{
-		cin >> x;
-		x = f(x);
-		a[x].push_back(i);
-	}
-	int l, r;
-	long long ans = 0;
-	while (q--)
-	{
-		cin >> l >> r;
-		ans = 0;
-		for (int i = 1; i <= 128; i++)
-		{
-			auto c1 = lower_bound(a[i].begin(), a[i].end(), l);
-			auto c2 = upper_bound(a[i].begin(), a[i].end(), r);
-			long long res = c2 - c1;
-			ans += res*(res-1)/2;
-		}
-		cout << ans << '\n';
-	}
-	return 0;
-}
+//#include <iostream>
+//#include <cmath>
+//#include <algorithm>
+//#include <vector>
+//using namespace std;
+//int f(int x)
+//{
+//	int ans = 0;
+//	for (int i = 1; i < sqrt(x); i++)
+//	{
+//		if (x % i == 0)
+//			ans += 2;
+//	}
+//	if ((int)sqrt(x) * (int)sqrt(x) == x)
+//		ans++;
+//	return ans;
+//}
+//int main()
+//{
+//	int n, q,x;
+//	cin >> n >> q;
+//	vector<vector<int>>a(250);
+//	for (int i = 1; i <= n; i++)
+//	{
+//		cin >> x;
+//		x = f(x);
+//		a[x].push_back(i);
+//	}
+//	int l, r;
+//	long long ans = 0;
+//	while (q--)
+//	{
+//		cin >> l >> r;
+//		ans = 0;
+//		for (int i = 1; i <= 128; i++)
+//		{
+//			auto c1 = lower_bound(a[i].begin(), a[i].end(), l);
+//			auto c2 = upper_bound(a[i].begin(), a[i].end(), r);
+//			long long res = c2 - c1;
+//			ans += res*(res-1)/2;
+//		}
+//		cout << ans << '\n';
+//	}
+//	return 0;
+//}
