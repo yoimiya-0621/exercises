@@ -1,9 +1,2 @@
-﻿  2.cpp
-  5.cpp
-D:\code\personal-algorithm-training\百度之星大赛\百度之星大赛\5.cpp(5,19): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
-D:\code\personal-algorithm-training\百度之星大赛\百度之星大赛\5.cpp(15,29): warning C4244: “初始化”: 从“double”转换到“__int64”，可能丢失数据
-D:\code\personal-algorithm-training\百度之星大赛\百度之星大赛\5.cpp(15,40): warning C4244: “初始化”: 从“double”转换到“__int64”，可能丢失数据
-D:\code\personal-algorithm-training\百度之星大赛\百度之星大赛\5.cpp(15,49): warning C4244: “初始化”: 从“double”转换到“__int64”，可能丢失数据
-D:\code\personal-algorithm-training\百度之星大赛\百度之星大赛\5.cpp(15,57): warning C4244: “初始化”: 从“double”转换到“__int64”，可能丢失数据
-  正在生成代码...
+﻿  5.cpp
   百度之星大赛.vcxproj -> D:\code\personal-algorithm-training\百度之星大赛\x64\Debug\百度之星大赛.exe
