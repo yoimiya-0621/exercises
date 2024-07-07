@@ -122,40 +122,40 @@
 //}
 
 //F
-#include <iostream>
-using namespace std;
-#define ll long long
-const int N = 5e5 + 10;
-ll a[N];
-int main()
-{
-	ll n;
-	cin >> n;
-	for (int i = 1; i <= n; i++)
-	{
-		cin >> a[i];
-	}
-	int k = 1;
-	int flag = 0;
-	while (1) {
-		for (int i = 1; i <=n-2*k;  i++)
-		{
-			if (a[i] + a[i + 2 * k] == 2 * a[i + k] && i == n - 2 * k)
-			{
-				flag = 1;
-				break;
-			}
-
-			else if (a[i] + a[i + 2 * k] == 2 * a[i + k])
-				continue;
-			else
-				break;
-		}
-		if (flag)
-		{
-			cout << k;
-			return 0;
-		}
-		k++;
-	}
-}
+//#include <iostream>
+//using namespace std;
+//#define ll long long
+//const int N = 5e5 + 10;
+//ll a[N];
+//int main()
+//{
+//	ll n;
+//	cin >> n;
+//	for (int i = 1; i <= n; i++)
+//	{
+//		cin >> a[i];
+//	}
+//	int k = 1;
+//	int flag = 0;
+//	while (1) {
+//		for (int i = 1; i <=n-2*k;  i++)
+//		{
+//			if (a[i] + a[i + 2 * k] == 2 * a[i + k] && i == n - 2 * k)
+//			{
+//				flag = 1;
+//				break;
+//			}
+//
+//			else if (a[i] + a[i + 2 * k] == 2 * a[i + k])
+//				continue;
+//			else
+//				break;
+//		}
+//		if (flag)
+//		{
+//			cout << k;
+//			return 0;
+//		}
+//		k++;
+//	}
+//}
