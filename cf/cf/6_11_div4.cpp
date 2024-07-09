@@ -178,20 +178,20 @@
 //}
 
 //F
-#include <iostream>
-using namespace std;
-int main()
-{
-    unsigned char x = 255, y = '\2';
-    int z = (int)y;
-    switch (!!x) {
-    case 0: printf("*0*#"); break;
-    case 1:
-        switch (y) {
-        case 0: printf("*1*#"); break;
-        case 1: printf("*2*#"); break;
-        }
-    default: printf("*3*#");
-    }
-	return 0;
-}
+//#include <iostream>
+//using namespace std;
+//int main()
+//{
+//    unsigned char x = 255, y = '\2';
+//    int z = (int)y;
+//    switch (!!x) {
+//    case 0: printf("*0*#"); break;
+//    case 1:
+//        switch (y) {
+//        case 0: printf("*1*#"); break;
+//        case 1: printf("*2*#"); break;
+//        }
+//    default: printf("*3*#");
+//    }
+//	return 0;
+//}

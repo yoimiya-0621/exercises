@@ -1,3 +1,15 @@
 ﻿  24_7_7_Round50.cpp
-D:\code\personal-algorithm-training\牛客周赛\牛客周赛\24_7_7_Round50.cpp(45,19): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+D:\code\personal-algorithm-training\牛客周赛\牛客周赛\24_7_7_Round50.cpp(204,19): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+D:\code\personal-algorithm-training\牛客周赛\牛客周赛\24_7_7_Round50.cpp(219,19): warning C4018: “<”: 有符号/无符号不匹配
+D:\code\personal-algorithm-training\牛客周赛\牛客周赛\24_7_7_Round50.cpp(246,18): warning C4244: “参数”: 从“__int64”转换到“_Ty”，可能丢失数据
+D:\code\personal-algorithm-training\牛客周赛\牛客周赛\24_7_7_Round50.cpp(246,18): warning C4244:         with
+D:\code\personal-algorithm-training\牛客周赛\牛客周赛\24_7_7_Round50.cpp(246,18): warning C4244:         [
+D:\code\personal-algorithm-training\牛客周赛\牛客周赛\24_7_7_Round50.cpp(246,18): warning C4244:             _Ty=int
+D:\code\personal-algorithm-training\牛客周赛\牛客周赛\24_7_7_Round50.cpp(246,18): warning C4244:         ]
+D:\code\personal-algorithm-training\牛客周赛\牛客周赛\24_7_7_Round50.cpp(247,18): warning C4244: “参数”: 从“__int64”转换到“_Ty”，可能丢失数据
+D:\code\personal-algorithm-training\牛客周赛\牛客周赛\24_7_7_Round50.cpp(247,18): warning C4244:         with
+D:\code\personal-algorithm-training\牛客周赛\牛客周赛\24_7_7_Round50.cpp(247,18): warning C4244:         [
+D:\code\personal-algorithm-training\牛客周赛\牛客周赛\24_7_7_Round50.cpp(247,18): warning C4244:             _Ty=int
+D:\code\personal-algorithm-training\牛客周赛\牛客周赛\24_7_7_Round50.cpp(247,18): warning C4244:         ]
+D:\code\personal-algorithm-training\牛客周赛\牛客周赛\24_7_7_Round50.cpp(255,13): warning C4244: “=”: 从“long double”转换到“__int64”，可能丢失数据
   牛客周赛.vcxproj -> D:\code\personal-algorithm-training\牛客周赛\x64\Debug\牛客周赛.exe
