@@ -1,1 +1,2 @@
 D:\code\personal-algorithm-training\练习\x64\Debug\练习.exe
+D:\code\personal-algorithm-training\前缀和与差分\x64\Debug\练习.exe

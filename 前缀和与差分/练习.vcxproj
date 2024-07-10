@@ -127,12 +127,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="地毯.cpp" />
     <ClCompile Include="最大加权矩形.cpp" />
     <ClCompile Include="求区间和.cpp" />
     <ClCompile Include="海底高铁.cpp" />
     <ClCompile Include="语文成绩.cpp" />
-    <ClCompile Include="领地选择.cpp" />
+    <ClCompile Include="魔法封印.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

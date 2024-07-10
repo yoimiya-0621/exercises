@@ -27,10 +27,7 @@
     <ClCompile Include="海底高铁.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="地毯.cpp">
-      <Filter>源文件</Filter>
-    </ClCompile>
-    <ClCompile Include="领地选择.cpp">
+    <ClCompile Include="魔法封印.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
