@@ -1,4 +1,5 @@
-﻿  6_11_div4.cpp
-D:\code\personal-algorithm-training\cf\cf\6_11_div4.cpp(187,18): warning C4144: “!”: 关系表达式用作 switch 表达式
-D:\code\personal-algorithm-training\cf\cf\6_11_div4.cpp(195,5): warning C4809: 切换语句有多余的“default”标签；给定所有可能的“case”标签
+﻿  7_11_div3.cpp
+D:\code\personal-algorithm-training\cf\cf\7_11_div3.cpp(168,19): warning C4244: “初始化”: 从“double”转换到“int”，可能丢失数据
+D:\code\personal-algorithm-training\cf\cf\7_11_div3.cpp(212,18): warning C4267: “-=”: 从“size_t”转换到“int”，可能丢失数据
+D:\code\personal-algorithm-training\cf\cf\7_11_div3.cpp(243,17): warning C4267: “-=”: 从“size_t”转换到“int”，可能丢失数据
   cf.vcxproj -> D:\code\personal-algorithm-training\cf\x64\Debug\cf.exe
