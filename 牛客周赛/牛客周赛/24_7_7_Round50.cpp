@@ -196,65 +196,65 @@
 //	return 0;
 //}
 
-#include <iostream>
-#include <vector>
-#include <map>
-using namespace std;
-#define ll long long
-const int N = 1e5 + 10;
-vector<int>v[N];
-ll a[N], b[N], maxdeep;
-ll dp[N];
-ll n;
-long double c[N];
-ll ans = 0;
-const int mod = 998244353;
-void dfs(ll now, ll fu)
-{
-	dp[now] = dp[fu] + 1;
-	maxdeep = max(maxdeep, dp[now]);
-	if (v[now].size() == 1 && now > 1)
-		b[dp[now]]++;
-	a[dp[now]]++;
-	for (ll i = 0; i < v[now].size(); i++)
-	{
-		if (v[now][i] == fu)
-			continue;
-		dfs(v[now][i], now);
-	}
-}
-ll f(ll  x, ll mod)
-{
-	ll k = 0;
-	ll aa = 1;
-	while (1)
-	{
-		aa += k * mod;
-		if (aa % x == 0)
-			return aa / x;
-		k++;
-
-	}
-}
-int main()
-{
-	cin >> n;
-	ll x, y;
-	for (int i = 0; i < n - 1; i++)
-	{
-		cin >> x >> y;
-		v[x].push_back(y);
-		v[y].push_back(x);
-	}
-	dfs(1, 0);
-	c[1] = 1;
-	for (int i = 2; i <= maxdeep; i++)
-	{
-		//c[i] = (c[i - 1] * ((a[i] - b[i]) % mod) * f(a[i], mod)) % mod;
-		c[i] = c[i - 1] * (double)(a[i] - b[i]) / a[i];
-		ans = ans + (1 - c[i]) * (i - 1);
-		ans %= mod;
-	}
-	cout << ans;
-	return 0;
-}
+//#include <iostream>
+//#include <vector>
+//#include <map>
+//using namespace std;
+//#define ll long long
+//const int N = 1e5 + 10;
+//vector<int>v[N];
+//ll a[N], b[N], maxdeep;
+//ll dp[N];
+//ll n;
+//long double c[N];
+//ll ans = 0;
+//const int mod = 998244353;
+//void dfs(ll now, ll fu)
+//{
+//	dp[now] = dp[fu] + 1;
+//	maxdeep = max(maxdeep, dp[now]);
+//	if (v[now].size() == 1 && now > 1)
+//		b[dp[now]]++;
+//	a[dp[now]]++;
+//	for (ll i = 0; i < v[now].size(); i++)
+//	{
+//		if (v[now][i] == fu)
+//			continue;
+//		dfs(v[now][i], now);
+//	}
+//}
+//ll f(ll  x, ll mod)
+//{
+//	ll k = 0;
+//	ll aa = 1;
+//	while (1)
+//	{
+//		aa += k * mod;
+//		if (aa % x == 0)
+//			return aa / x;
+//		k++;
+//
+//	}
+//}
+//int main()
+//{
+//	cin >> n;
+//	ll x, y;
+//	for (int i = 0; i < n - 1; i++)
+//	{
+//		cin >> x >> y;
+//		v[x].push_back(y);
+//		v[y].push_back(x);
+//	}
+//	dfs(1, 0);
+//	c[1] = 1;
+//	for (int i = 2; i <= maxdeep; i++)
+//	{
+//		//c[i] = (c[i - 1] * ((a[i] - b[i]) % mod) * f(a[i], mod)) % mod;
+//		c[i] = c[i - 1] * (double)(a[i] - b[i]) / a[i];
+//		ans = ans + (1 - c[i]) * (i - 1);
+//		ans %= mod;
+//	}
+//	cout << ans;
+//	return 0;
+//}
