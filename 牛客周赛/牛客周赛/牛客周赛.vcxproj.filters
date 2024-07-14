@@ -33,5 +33,8 @@
     <ClCompile Include="24_7_7_Round50.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="24_7_14_Round51.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

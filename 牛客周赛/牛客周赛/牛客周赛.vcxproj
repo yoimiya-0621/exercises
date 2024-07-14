@@ -132,6 +132,7 @@
     <ClCompile Include="24_5_26_Round44.cpp" />
     <ClCompile Include="24_5_31.cpp" />
     <ClCompile Include="24_6_30_Round49.cpp" />
+    <ClCompile Include="24_7_14_Round51.cpp" />
     <ClCompile Include="24_7_7_Round50.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
