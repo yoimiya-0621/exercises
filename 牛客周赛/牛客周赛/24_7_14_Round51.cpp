@@ -189,3 +189,229 @@
 //	}
 //	return 0;
 //}
+
+//#include <iostream>
+//#include <algorithm>
+//using namespace std;
+//#define ll long long
+//const int N = 1e6 + 10;
+//char ch1[N];
+//char ch2[N];
+//ll a[N];
+//ll dp[N];
+//ll n, ans;
+//int main()
+//{
+//    cin >> n;
+//    for (int i = 0; i < n; i++) {
+//        cin >> ch1[i];
+//        if (ch1[i] == 'R')
+//            a[i]++;
+//    }
+//    for (int i = 0; i < n; i++) {
+//        cin >> ch2[i];
+//        if (ch2[i] == 'R')
+//            a[i]++;
+//    }
+//    for (int i = 0; i < n; i++)
+//    {
+//        if (i == 0) {
+//            if (a[i] == 2)
+//                dp[i] = 1;
+//        }
+//        else if (a[i] == 2)
+//        {
+//            dp[i] = dp[i - 1] + 2;
+//        }
+//        else if (a[i] == 0) {
+//            dp[i] = 0;
+//        }
+//        else {
+//            if (ch1[i] == 'R' && ch1[i - 1] == 'R') {
+//                dp[i] = dp[i - 1] + 1;
+//                if (a[i-1] == 2)
+//                    dp[i] -= 1;
+//            }
+//            else if (ch2[i] == 'R' && ch2[i - 1] == 'R') {
+//                dp[i] = dp[i - 1] + 1;
+//                if (a[i - 1] == 2)
+//                    dp[i] -= 1;
+//            }
+//            else
+//                dp[i] = 0;
+//        }
+//        ans = max(ans, dp[i]);
+//    }
+//    cout << ans;
+//    return 0;
+//}
+
+// #include <bits/stdc++.h>
+// using namespace std;
+// #define ll long long
+// const int N = 1e6 + 10;
+// char ch1[N];
+// char ch2[N];
+// ll a[N];
+// ll dp[N];
+// ll n, ans;
+// int main()
+// {
+//     cin >> n;
+//     for (int i = 0; i < n; i++) {
+//         cin >> ch1[i];
+//         if (ch1[i] == 'R')
+//             a[i]++;
+//     }
+//     for (int i = 0; i < n; i++) {
+//         cin >> ch2[i];
+//         if (ch2[i] == 'R')
+//             a[i]++;
+//     }
+//     for (int i = 0; i < n; i++)
+//     {
+//         if(i==0){
+//             if(a[i]==2)
+//             dp[i]=1;
+//         }
+//         else if (a[i] == 2)
+//         {
+//             dp[i] = dp[i - 1] + 2;
+//         }
+//         else if (a[i] == 0) {
+//             dp[i] = 0;
+//         }
+//         else {
+//             if (ch1[i] == 'R' && ch1[i - 1] == 'R') {
+//                 dp[i] = dp[i - 1] + 1;
+//             }
+//             else if (ch2[i] == 'R' && ch2[i - 1] == 'R') {
+//                 dp[i] = dp[i - 1] + 1;
+//             }
+//             else
+//                 dp[i] = 0;
+//         }
+//         ans = max(ans, dp[i]);
+//     }
+//     cout << ans;
+//     return 0;
+// }
+
+//#include <iostream>
+//#include <algorithm>
+//using namespace std;
+//#define ll long long
+//const int N = 1e6 + 10;
+//char ch[5][N];
+//ll dp[5][N], a[N];
+//ll n, ans;
+//int main()
+//{
+//    cin >> n;
+//    for (int i = 1; i <= 2; i++) {
+//        for (int j = 1; j <= n; j++) {
+//            cin >> ch[i][j];
+//            if (ch[i][j] == 'R') {
+//                a[j]++;
+//            }
+//        }
+//    }
+//    for (int i = 1; i <= n; i++)
+//    {
+//        if (i == 1) {
+//            if (a[i] == 2) {
+//                dp[1][1] = 1;
+//                dp[2][1] = 1;
+//                ans = 1;
+//            }
+//            continue;
+//        }
+//        if (a[i] == 2) {
+//            if (a[i - 1] == 2) {
+//                dp[1][i] = dp[2][i - 1] + 2;
+//                dp[2][i] = dp[1][i - 1] + 2;
+//            }
+//            else if (a[i - 1] == 0) {
+//                dp[1][i] = 1;
+//                dp[2][i] = 1;
+//            }
+//            else {
+//                if (ch[1][i-1] == 'R') {
+//                    dp[1][i] = dp[1][i - 1] + 1;
+//                    dp[2][i] = dp[1][i - 1] + 2;
+//                }
+//                else {
+//                    dp[1][i] = dp[2][i - 1] + 2;
+//                    dp[2][i] = dp[2][i - 1] + 1;
+//                }
+//            }
+//        }
+//        else if (a[i] == 1) {
+//            if (ch[1][i] == 'R') {
+//                if (ch[1][i - 1] == 'R')
+//                    dp[1][i] = dp[1][i - 1] + 1;
+//                else
+//                    dp[1][i] = 0;
+//                dp[2][i] = 0;
+//            }
+//            else {
+//                if (ch[2][i - 1] == 'R')
+//                    dp[2][i] = dp[2][i - 1] + 1;
+//                else
+//                    dp[2][i] = 0;
+//                dp[1][i] = 0;
+//            }
+//        }
+//        else if (a[i] == 0) {
+//            dp[1][i] = 0;
+//            dp[2][i] = 0;
+//        }
+//        ans = max(ans, dp[1][i]);
+//        ans = max(ans, dp[2][i]);
+//    }
+//    cout << ans;
+//    return 0;
+//}
+
+#include <iostream>
+#include <vector>
+#include <map>
+using namespace std;
+#define ll long long
+const int N = 2e5 + 10;
+int n, x, y;
+int dx[4] = { 0,1,0,-1 };
+int dy[4] = { 1,0,-1,0 };
+ll ans = 0;
+vector<pair<int, int>>v;
+map<pair<int, int>, int>mp;
+int main()
+{
+    string s;
+    cin >> n >> x >> y >> s;
+    pair<int, int>v0(0, 0);
+    for (int i = 0; i < n; i++) {
+        if (s[i] == 'W') {
+            v0.second += 1;
+        }
+        else if (s[i] == 'S') {
+            v0.second -= 1;
+        }
+        else if (s[i] == 'A') {
+            v0.first -= 1;
+        }
+        else {
+            v0.first += 1;
+        }
+        v.push_back(v0);
+    }
+    for (int i = n - 1; i >= 0; i--) {
+        mp[v[i]] = i + 1;
+        pair<int,int> ok(v[i].first + x, v[i].second + y);
+        if (mp[ok]) {
+            ans += n - mp[ok] + 1;
+        }
+    }
+    cout << ans;
+    return 0;
+}
