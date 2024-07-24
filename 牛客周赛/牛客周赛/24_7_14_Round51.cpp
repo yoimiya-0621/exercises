@@ -416,73 +416,134 @@
 //    return 0;
 //}
 
+//#include <iostream>
+//#include <map>
+//#include <vector>
+//using namespace std;
+//int a, n, b;
+//int wina, winb;
+//int WINA, WINB;
+//map<int, int>mp;
+//int main() {
+//    ios::sync_with_stdio(false);
+//    cin.tie(0);
+//    cout.tie(0);
+//    string s;
+//    cin >> n >> a >> b;
+//    cin >> s;
+//    int flag = 0, k = 0;
+//    map<int, int>mp1;
+//    map<int, int>mp2;
+//    for (int i = 0; i < n; i++)
+//    {
+//        wina = 0;
+//        winb = 0;
+//        for (int j = i;; j++)
+//        {
+//            j %= n;
+//            if (s[j] == '1')
+//                wina++;
+//            else
+//                winb++;
+//            if (wina >= a) {
+//                mp1[i] = j+1;
+//                mp2[i] = 2;
+//                break;
+//            }
+//            else if (winb >= a) {
+//                mp1[i] = j+1;
+//                mp2[i] = 1;
+//                break;
+//            }
+//        }
+//        
+//    }
+//    for (int i = 0; i < n; i++) {
+//        WINA = 0;
+//        WINB = 0;
+//        wina = 0;
+//        winb = 0;
+//        for (int j = i;;)
+//        {
+//            j %= n;
+//            if (mp1[j]) {
+//                if (mp2[j] == 2)
+//                    WINA++;
+//                else if (mp2[j] == 1)
+//                    WINB++;
+//                j = mp1[j];
+//            }
+//            if (WINA >= b) {
+//                flag = 1;
+//                break;
+//            }
+//            if (WINB >= b) {
+//                flag = 0;
+//                break;
+//            }
+//        }
+//        cout << flag;
+//    }
+//    return 0;
+//}
+
+
 #include <iostream>
-#include <map>
-#include <vector>
 using namespace std;
-int a, n, b;
-int wina, winb;
-int WINA, WINB;
-map<int, int>mp;
-int main() {
-    ios::sync_with_stdio(false);
-    cin.tie(0);
-    cout.tie(0);
-    string s;
-    cin >> n >> a >> b;
-    cin >> s;
-    int flag = 0, k = 0;
-    map<int, int>mp1;
-    map<int, int>mp2;
-    for (int i = 0; i < n; i++)
-    {
-        wina = 0;
-        winb = 0;
-        for (int j = i;; j++)
-        {
-            j %= n;
-            if (s[j] == '1')
-                wina++;
-            else
-                winb++;
-            if (wina >= a) {
-                mp1[i] = j+1;
-                mp2[i] = 2;
-                break;
-            }
-            else if (winb >= a) {
-                mp1[i] = j+1;
-                mp2[i] = 1;
-                break;
-            }
-        }
-        
-    }
-    for (int i = 0; i < n; i++) {
-        WINA = 0;
-        WINB = 0;
-        wina = 0;
-        winb = 0;
-        for (int j = i;;)
-        {
-            j %= n;
-            if (mp1[j]) {
-                if (mp2[j] == 2)
-                    WINA++;
-                else if (mp2[j] == 1)
-                    WINB++;
-                j = mp1[j];
-            }
-            if (WINA >= b) {
-                flag = 1;
-                break;
-            }
-            if (WINB >= b) {
-                flag = 0;
-                break;
-            }
-        }
-        cout << flag;
-    }
+
+#define MAXSIZE 50
+typedef int KeyType;
+
+typedef  struct
+{
+    KeyType  key;
+} ElemType;
+
+typedef  struct
+{
+    ElemType* R;
+    int  length;
+} SSTable;
+
+void  Create(SSTable& T)
+{
+    int i;
+    T.R = new ElemType[MAXSIZE + 1];
+    cin >> T.length;
+    for (i = 1; i <= T.length; i++)
+        cin >> T.R[i].key;
+}
+
+int  Search_Bin(SSTable T, KeyType k);
+
+int main()
+{
+    SSTable T;  KeyType k;
+    Create(T);
+    cin >> k;
+    int pos = Search_Bin(T, k);
+    if (pos == 0) cout << "NOT FOUND" << endl;
+    else cout << pos << endl;
     return 0;
+}
+
+/* 请在这里填写答案 */
+int  Search_Bin(SSTable T, KeyType k)
+{
+    int l = 1, r = T.length, mid, flag = 0;//定义左右，中指针
+    while (l < r) {
+        mid = (l + r) >> 1;
+        if (k > T.R[mid].key)
+            l = mid + 1;
+        else if (k < T.R[mid].key)
+            r = mid;
+        else {
+            flag = 1;//找到了
+            break;
+        }
+    }
+    if (flag)
+        return mid;
+    else
+        return 0;
 }
