@@ -488,62 +488,121 @@
 //}
 
 
-#include <iostream>
+//#include <iostream>
+//using namespace std;
+//
+//#define MAXSIZE 50
+//typedef int KeyType;
+//
+//typedef  struct
+//{
+//    KeyType  key;
+//} ElemType;
+//
+//typedef  struct
+//{
+//    ElemType* R;
+//    int  length;
+//} SSTable;
+//
+//void  Create(SSTable& T)
+//{
+//    int i;
+//    T.R = new ElemType[MAXSIZE + 1];
+//    cin >> T.length;
+//    for (i = 1; i <= T.length; i++)
+//        cin >> T.R[i].key;
+//}
+//
+//int  Search_Bin(SSTable T, KeyType k);
+//
+//int main()
+//{
+//    SSTable T;  KeyType k;
+//    Create(T);
+//    cin >> k;
+//    int pos = Search_Bin(T, k);
+//    if (pos == 0) cout << "NOT FOUND" << endl;
+//    else cout << pos << endl;
+//    return 0;
+//}
+//
+///* 请在这里填写答案 */
+//int  Search_Bin(SSTable T, KeyType k)
+//{
+//    int l = 1, r = T.length, mid, flag = 0;//定义左右，中指针
+//    while (l < r) {
+//        mid = (l + r) >> 1;
+//        if (k > T.R[mid].key)
+//            l = mid + 1;
+//        else if (k < T.R[mid].key)
+//            r = mid;
+//        else {
+//            flag = 1;//找到了
+//            break;
+//        }
+//    }
+//    if (flag)
+//        return mid;
+//    else
+//        return 0;
+//}
+
+
+#include<iostream>
 using namespace std;
-
-#define MAXSIZE 50
-typedef int KeyType;
-
-typedef  struct
+#define int long long
+const int N = 1e6 + 100;
+int p[N];
+int sum[N];
+int find(int x)
 {
-    KeyType  key;
-} ElemType;
-
-typedef  struct
-{
-    ElemType* R;
-    int  length;
-} SSTable;
-
-void  Create(SSTable& T)
-{
-    int i;
-    T.R = new ElemType[MAXSIZE + 1];
-    cin >> T.length;
-    for (i = 1; i <= T.length; i++)
-        cin >> T.R[i].key;
+	if (p[x] != x) p[x] = find(p[x]);
+	return p[x];
 }
 
-int  Search_Bin(SSTable T, KeyType k);
-
-int main()
+void solve()
 {
-    SSTable T;  KeyType k;
-    Create(T);
-    cin >> k;
-    int pos = Search_Bin(T, k);
-    if (pos == 0) cout << "NOT FOUND" << endl;
-    else cout << pos << endl;
-    return 0;
+	int n, m;
+	cin >> n >> m;
+	for (int i = 1; i <= n; i++)
+	{
+		cin >> sum[i];
+		p[i] = i;
+	}
+	for (int i = 1; i <= m; i++)
+	{
+		int x, y;
+		cin >> x >> y;
+		p[find(x)] = find(y);
+	}
+	for (int i = 1; i <= n; i++)
+	{
+		sum[p[find(i)]] = max(sum[p[find(i)]], sum[i]);
+	}
+	int mi = 1e9 + 1;
+	int ans = 0;
+	for (int i = 1; i <= n; i++)
+	{
+		if (find(i) != i)  continue;
+		mi = min(mi, sum[p[find(i)]]);
+		ans += p[find(i)];
+	}
+	cout << ans - mi << endl;
 }
 
-/* 请在这里填写答案 */
-int  Search_Bin(SSTable T, KeyType k)
+signed main()
 {
-    int l = 1, r = T.length, mid, flag = 0;//定义左右，中指针
-    while (l < r) {
-        mid = (l + r) >> 1;
-        if (k > T.R[mid].key)
-            l = mid + 1;
-        else if (k < T.R[mid].key)
-            r = mid;
-        else {
-            flag = 1;//找到了
-            break;
-        }
-    }
-    if (flag)
-        return mid;
-    else
-        return 0;
+	ios::sync_with_stdio(false);
+	cin.tie(0);
+	cout.tie(0);
+
+	int _ = 1;
+	//cin >> _;
+
+	while (_--) {
+		solve();
+	}
+
+	return 0;
 }
