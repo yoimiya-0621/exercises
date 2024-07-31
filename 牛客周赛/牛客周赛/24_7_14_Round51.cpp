@@ -549,60 +549,85 @@
 //}
 
 
-#include<iostream>
-using namespace std;
-#define int long long
-const int N = 1e6 + 100;
-int p[N];
-int sum[N];
-int find(int x)
-{
-	if (p[x] != x) p[x] = find(p[x]);
-	return p[x];
-}
+//#include<iostream>
+//using namespace std;
+//#define int long long
+//const int N = 1e6 + 100;
+//int p[N];
+//int sum[N];
+//int find(int x)
+//{
+//	if (p[x] != x) p[x] = find(p[x]);
+//	return p[x];
+//}
+//
+//void solve()
+//{
+//	int n, m;
+//	cin >> n >> m;
+//	for (int i = 1; i <= n; i++)
+//	{
+//		cin >> sum[i];
+//		p[i] = i;
+//	}
+//	for (int i = 1; i <= m; i++)
+//	{
+//		int x, y;
+//		cin >> x >> y;
+//		p[find(x)] = find(y);
+//	}
+//	for (int i = 1; i <= n; i++)
+//	{
+//		sum[p[find(i)]] = max(sum[p[find(i)]], sum[i]);
+//	}
+//	int mi = 1e9 + 1;
+//	int ans = 0;
+//	for (int i = 1; i <= n; i++)
+//	{
+//		if (find(i) != i)  continue;
+//		mi = min(mi, sum[p[find(i)]]);
+//		ans += p[find(i)];
+//	}
+//	cout << ans - mi << endl;
+//}
+//
+//signed main()
+//{
+//	ios::sync_with_stdio(false);
+//	cin.tie(0);
+//	cout.tie(0);
+//
+//	int _ = 1;
+//	//cin >> _;
+//
+//	while (_--) {
+//		solve();
+//	}
+//
+//	return 0;
+//}
 
-void solve()
-{
-	int n, m;
-	cin >> n >> m;
-	for (int i = 1; i <= n; i++)
-	{
-		cin >> sum[i];
-		p[i] = i;
-	}
-	for (int i = 1; i <= m; i++)
-	{
-		int x, y;
-		cin >> x >> y;
-		p[find(x)] = find(y);
-	}
-	for (int i = 1; i <= n; i++)
-	{
-		sum[p[find(i)]] = max(sum[p[find(i)]], sum[i]);
-	}
-	int mi = 1e9 + 1;
-	int ans = 0;
-	for (int i = 1; i <= n; i++)
-	{
-		if (find(i) != i)  continue;
-		mi = min(mi, sum[p[find(i)]]);
-		ans += p[find(i)];
-	}
-	cout << ans - mi << endl;
-}
-
-signed main()
-{
-	ios::sync_with_stdio(false);
-	cin.tie(0);
-	cout.tie(0);
-
-	int _ = 1;
-	//cin >> _;
-
-	while (_--) {
-		solve();
-	}
-
-	return 0;
-}
+//#include <iostream>
+//#include <cmath>
+//using namespace std;
+//int main()
+//{
+//    int n;
+//    cin >> n;
+//    int flag = 0;
+//    for (int i = 1; i <= sqrt(n); i++)
+//    {
+//        for (int j = i; j <= sqrt(n); j++)
+//        {
+//            if (i * i + j * j == n)
+//            {
+//                flag = 1;
+//                cout << i << ' ' << j << '\n';
+//                break;
+//            }
+//        }
+//    }
+//    if (!flag)
+//        cout << "No Solution";
+//    return 0;
+//}
