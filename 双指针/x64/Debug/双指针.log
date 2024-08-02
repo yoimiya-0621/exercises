@@ -1,5 +1,0 @@
-﻿  砍树.cpp
-  逛画展.cpp
-  正在生成代码...
-D:\code\personal-algorithm-training\双指针\砍树.cpp(17,8): warning C4244: “初始化”: 从“__int64”转换到“int”，可能丢失数据
-  双指针.vcxproj -> D:\code\personal-algorithm-training\双指针\x64\Debug\双指针.exe
