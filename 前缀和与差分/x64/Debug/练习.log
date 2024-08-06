@@ -1,2 +1,2 @@
 ﻿  魔法封印.cpp
-  练习.vcxproj -> D:\code\personal-algorithm-training\前缀和与差分\x64\Debug\练习.exe
+D:\code\personal-algorithm-training\前缀和与差分\魔法封印.cpp(112,14): error C4996: 'ctime': This function or variable may be unsafe. Consider using ctime_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
